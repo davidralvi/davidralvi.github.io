@@ -1,0 +1,1359 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hxc直接进入四叶草_四叶草视频社区_四叶草原创影像平台</title>
+<meta name="description" content="hxc直接进入四叶草官方网站，四叶草视频品牌深耕原创影像与内容生态，汇聚创作者、企业与社区，提供高清正版视频内容与专业创作服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23135c3f'/%3E%3Cpath d='M32 14c5 0 8 4 8 8s-3 8-8 8-8-4-8-8 3-8 8-8z' fill='%2377d6a8'/%3E%3Cpath d='M32 34c5 0 8 4 8 8s-3 8-8 8-8-4-8-8 3-8 8-8z' fill='%2381e0b0'/%3E%3Cpath d='M14 32c0-5 4-8 8-8s8 3 8 8-4 8-8 8-8-3-8-8z' fill='%2357c58d'/%3E%3Cpath d='M34 32c0-5 4-8 8-8s8 3 8 8-4 8-8 8-8-3-8-8z' fill='%2368cf9c'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --sf-green:#135c3f;
+    --sf-green-deep:#0d4630;
+    --sf-green-mint:#77d6a8;
+    --sf-green-soft:#e6f5ee;
+    --sf-earth:#b98b5e;
+    --sf-earth-soft:#f5ede2;
+    --sf-ink:#1f2b26;
+    --sf-muted:#63736b;
+    --sf-line:#d9e6df;
+    --sf-bg:#f8fbf9;
+    --sf-card:#ffffff;
+    --sf-radius:16px;
+    --sf-radius-sm:10px;
+    --sf-shadow:0 8px 28px rgba(19,92,63,.09);
+    --sf-shadow-soft:0 2px 10px rgba(19,92,63,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    background:var(--sf-bg);
+    color:var(--sf-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  ul,ol{list-style:none}
+  .sf-wrap{width:min(1180px,92vw);margin:0 auto}
+
+  /* ============ 吸顶区：公告条 + 页头 ============ */
+  .sf-sticky-top{
+    position:sticky;top:0;z-index:120;
+  }
+  .sf-announce{
+    background:linear-gradient(90deg,var(--sf-green-deep),var(--sf-green) 55%,#1d7a55);
+    color:#eafff5;
+    font-size:13.5px;
+    letter-spacing:.2px;
+  }
+  .sf-announce-inner{
+    width:min(1180px,92vw);margin:0 auto;
+    display:flex;align-items:center;gap:12px;
+    padding:8px 0;
+    overflow:hidden;
+  }
+  .sf-announce-badge{
+    flex:none;
+    background:var(--sf-green-mint);
+    color:var(--sf-green-deep);
+    font-size:11.5px;font-weight:700;
+    padding:2px 9px;border-radius:20px;
+    letter-spacing:.5px;
+  }
+  .sf-announce-track{
+    flex:1;min-width:0;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .sf-announce-track b{color:#b9f2d6;font-weight:600}
+  .sf-announce-more{
+    flex:none;font-size:12.5px;
+    border:1px solid rgba(255,255,255,.35);
+    padding:2px 10px;border-radius:20px;color:#dcffee;
+    transition:.2s;white-space:nowrap;
+  }
+  .sf-announce-more:hover{background:rgba(255,255,255,.14)}
+
+  .sf-header{
+    background:rgba(248,251,249,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--sf-line);
+  }
+  .sf-header-inner{
+    width:min(1180px,92vw);margin:0 auto;
+    display:flex;align-items:center;gap:22px;
+    padding:12px 0;
+  }
+  .sf-brand{display:flex;align-items:center;gap:10px;flex:none}
+  .sf-brand-mark{width:38px;height:38px;flex:none}
+  .sf-brand-name{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--sf-green-deep)}
+  .sf-brand-sub{font-size:10.5px;color:var(--sf-muted);letter-spacing:2px;display:block;line-height:1.2}
+
+  .sf-nav{flex:1;display:flex;gap:4px;flex-wrap:wrap}
+  .sf-nav a{
+    font-size:14.5px;color:#33463d;padding:7px 12px;border-radius:20px;
+    transition:.2s;
+  }
+  .sf-nav a:hover{background:var(--sf-green-soft);color:var(--sf-green-deep)}
+
+  .sf-header-tools{display:flex;align-items:center;gap:10px;flex:none}
+  .sf-search{position:relative}
+  .sf-search input{
+    width:186px;padding:8px 34px 8px 14px;
+    border:1px solid var(--sf-line);border-radius:22px;
+    background:#fff;font-size:13.5px;outline:none;
+    transition:.22s;color:var(--sf-ink);
+  }
+  .sf-search input:focus{border-color:var(--sf-green-mint);box-shadow:0 0 0 3px rgba(119,214,168,.22);width:220px}
+  .sf-search-btn{
+    position:absolute;right:4px;top:50%;transform:translateY(-50%);
+    width:28px;height:28px;border-radius:50%;
+    display:grid;place-items:center;color:var(--sf-green);
+  }
+  .sf-search-btn:hover{background:var(--sf-green-soft)}
+  .sf-search-tip{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;
+    background:#fff;border:1px solid var(--sf-line);border-radius:12px;
+    box-shadow:var(--sf-shadow);padding:8px;font-size:13px;display:none;
+  }
+  .sf-search-tip.show{display:block}
+  .sf-search-tip p{padding:6px 8px;color:var(--sf-muted);font-size:12.5px}
+  .sf-search-tip a{display:block;padding:6px 8px;border-radius:8px;color:#2c453a}
+  .sf-search-tip a:hover{background:var(--sf-green-soft);color:var(--sf-green-deep)}
+
+  .sf-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:7px;
+    border-radius:24px;font-size:14px;font-weight:600;
+    padding:9px 20px;transition:.22s;border:1px solid transparent;
+  }
+  .sf-btn-solid{background:var(--sf-green);color:#fff;box-shadow:0 6px 16px rgba(19,92,63,.22)}
+  .sf-btn-solid:hover{background:var(--sf-green-deep);transform:translateY(-1px)}
+  .sf-btn-ghost{border-color:var(--sf-green);color:var(--sf-green-deep);background:#fff}
+  .sf-btn-ghost:hover{background:var(--sf-green-soft)}
+  .sf-btn-earth{background:var(--sf-earth);color:#fff}
+  .sf-btn-earth:hover{background:#a5773f}
+
+  .sf-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--sf-line);background:#fff;align-items:center;justify-content:center}
+  .sf-burger span{display:block;width:18px;height:2px;background:var(--sf-green-deep);position:relative}
+  .sf-burger span::before,.sf-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--sf-green-deep)}
+  .sf-burger span::before{top:-6px}.sf-burger span::after{top:6px}
+
+  /* ============ 首屏 ============ */
+  .sf-hero{
+    position:relative;
+    background:
+      radial-gradient(circle at 82% 12%,rgba(119,214,168,.28),transparent 46%),
+      radial-gradient(circle at 8% 88%,rgba(185,139,94,.18),transparent 42%),
+      linear-gradient(160deg,#f2fbf6,#e8f4ee 60%,#f7f3ec);
+    overflow:hidden;
+    padding:56px 0 64px;
+    scroll-margin-top:120px;
+  }
+  .sf-hero-inner{
+    width:min(1180px,92vw);margin:0 auto;
+    display:grid;grid-template-columns:5fr 5fr;gap:46px;align-items:center;
+  }
+  .sf-hero-copy{min-width:0}
+  .sf-hero-kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;letter-spacing:1.5px;color:var(--sf-green-deep);
+    background:rgba(255,255,255,.8);border:1px solid #cfe9dc;
+    padding:5px 14px;border-radius:22px;margin-bottom:18px;font-weight:600;
+  }
+  .sf-dot{width:7px;height:7px;border-radius:50%;background:var(--sf-green-mint);box-shadow:0 0 0 4px rgba(119,214,168,.25)}
+  .sf-hero h1{
+    font-size:clamp(30px,4.4vw,50px);
+    line-height:1.2;letter-spacing:1px;color:var(--sf-green-deep);
+    font-weight:900;margin-bottom:14px;
+  }
+  .sf-hero h1 em{font-style:normal;color:var(--sf-earth);}
+  .sf-hero-lead{font-size:16.5px;color:#3d5148;margin-bottom:16px;max-width:33em}
+  .sf-hero-desc{
+    font-size:14.5px;color:var(--sf-muted);line-height:1.85;
+    border-left:3px solid var(--sf-green-mint);padding-left:14px;margin-bottom:24px;
+  }
+  .sf-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+  .sf-metrics{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+    max-width:460px;
+  }
+  .sf-metric{
+    background:rgba(255,255,255,.85);border:1px solid #dceee5;border-radius:14px;
+    padding:12px 10px;text-align:center;box-shadow:var(--sf-shadow-soft);
+  }
+  .sf-metric strong{display:block;font-size:21px;color:var(--sf-green-deep);font-weight:800;letter-spacing:.5px}
+  .sf-metric span{font-size:11.5px;color:var(--sf-muted)}
+
+  .sf-hero-visual{position:relative;min-width:0}
+  .sf-hero-frame{
+    border-radius:22px;overflow:hidden;
+    box-shadow:0 26px 60px rgba(13,70,48,.24);
+    border:1px solid rgba(255,255,255,.7);
+    position:relative;
+  }
+  .sf-hero-frame img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover}
+  .sf-hero-play{
+    position:absolute;left:22px;bottom:20px;
+    display:inline-flex;align-items:center;gap:9px;
+    background:rgba(9,50,34,.72);color:#ddfbee;
+    padding:8px 16px;border-radius:24px;font-size:13px;
+    backdrop-filter:blur(6px);letter-spacing:.5px;
+  }
+  .sf-hero-play i{
+    width:0;height:0;border-left:9px solid var(--sf-green-mint);
+    border-top:6px solid transparent;border-bottom:6px solid transparent;display:inline-block;
+  }
+  .sf-hero-tag{
+    position:absolute;right:-8px;top:-14px;
+    background:#fff;border:1px solid #dceee5;border-radius:14px;
+    padding:9px 14px;box-shadow:var(--sf-shadow);font-size:12.5px;color:var(--sf-green-deep);
+    font-weight:600;display:flex;align-items:center;gap:8px;
+  }
+  .sf-hero-tag b{font-size:16px;color:var(--sf-earth)}
+
+  /* ============ 通用 section ============ */
+  .sf-section{padding:56px 0;scroll-margin-top:118px}
+  .sf-section:nth-of-type(even){background:#fff}
+  .sf-sec-head{margin-bottom:30px;max-width:820px}
+  .sf-sec-eyebrow{
+    font-size:12px;letter-spacing:2.5px;color:var(--sf-earth);
+    font-weight:700;text-transform:uppercase;margin-bottom:8px;display:block;
+  }
+  .sf-sec-head h2{
+    font-size:clamp(23px,3vw,32px);color:var(--sf-green-deep);
+    font-weight:800;line-height:1.3;letter-spacing:.6px;
+  }
+  .sf-sec-head p{margin-top:10px;color:var(--sf-muted);font-size:14.5px}
+  .sf-h3{font-size:17.5px;color:#22402f;font-weight:700;line-height:1.5}
+
+  /* ============ 焦点内容 ============ */
+  .sf-focus-grid{
+    display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;
+    align-items:start;
+  }
+  .sf-focus-main{
+    background:#fff;border-radius:var(--sf-radius);overflow:hidden;
+    box-shadow:var(--sf-shadow);border:1px solid var(--sf-line);
+  }
+  .sf-focus-main figure{position:relative}
+  .sf-focus-main figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .sf-focus-badge{
+    position:absolute;left:14px;top:14px;
+    background:var(--sf-green-deep);color:#d9fced;
+    font-size:12px;padding:4px 12px;border-radius:20px;letter-spacing:.5px;
+  }
+  .sf-focus-body{padding:20px 22px 22px}
+  .sf-focus-body h3{font-size:20px;line-height:1.45;color:var(--sf-green-deep);font-weight:800;margin-bottom:8px}
+  .sf-focus-body p{font-size:14px;color:var(--sf-muted);margin-bottom:16px}
+  .sf-focus-side{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .sf-focus-item{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius-sm);
+    padding:15px 17px;transition:.22s;min-width:0;
+  }
+  .sf-focus-item:hover{transform:translateY(-2px);box-shadow:var(--sf-shadow);border-color:#bfe2d1}
+  .sf-focus-item h3{font-size:16px;color:#22402f;font-weight:700;line-height:1.5;margin-bottom:6px}
+  .sf-focus-item p{font-size:13.5px;color:var(--sf-muted)}
+  .sf-focus-item .sf-tagrow{margin-top:10px}
+
+  .sf-tagrow{display:flex;flex-wrap:wrap;gap:6px}
+  .sf-tag{
+    font-size:11.5px;padding:2px 10px;border-radius:20px;
+    background:var(--sf-green-soft);color:var(--sf-green-deep);border:1px solid #d2eadf;
+  }
+  .sf-tag-earth{background:var(--sf-earth-soft);color:#8a5f2f;border-color:#ecd9bf}
+
+  .sf-video-meta{
+    display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+    font-size:12.5px;color:#7b8b83;margin-top:12px;
+  }
+  .sf-video-meta .sf-author{display:inline-flex;align-items:center;gap:6px;color:#3c5749}
+  .sf-avatar{
+    width:26px;height:26px;border-radius:50%;flex:none;
+    display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;
+    background:var(--sf-green);letter-spacing:0;
+  }
+  .sf-avatar.a2{background:var(--sf-earth)}
+  .sf-avatar.a3{background:#3f8fa8}
+  .sf-avatar.a4{background:#8a6bbf}
+  .sf-avatar.a5{background:#c06a7a}
+  .sf-avatar.a6{background:#4d8c5a}
+
+  .sf-actions{display:flex;gap:8px;flex-wrap:wrap}
+  .sf-act{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:12.5px;padding:5px 12px;border-radius:20px;
+    border:1px solid var(--sf-line);background:#fff;color:#456152;transition:.2s;
+  }
+  .sf-act:hover{border-color:var(--sf-green-mint);background:var(--sf-green-soft)}
+  .sf-act.liked{background:var(--sf-green);border-color:var(--sf-green);color:#fff}
+  .sf-act.saved{background:var(--sf-earth-soft);border-color:#e2c9a5;color:#8a5f2f}
+  .sf-act svg{width:13px;height:13px}
+
+  /* ============ 视频流 ============ */
+  .sf-video-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .sf-video-card{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius);
+    overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.24s;
+    box-shadow:var(--sf-shadow-soft);
+  }
+  .sf-video-card:hover{transform:translateY(-3px);box-shadow:var(--sf-shadow);border-color:#bfe2d1}
+  .sf-video-card figure{position:relative}
+  .sf-video-card figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .sf-dur{
+    position:absolute;right:10px;bottom:10px;background:rgba(9,40,28,.78);
+    color:#e6fff4;font-size:11.5px;padding:2px 8px;border-radius:6px;
+  }
+  .sf-video-card .sf-vc-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+  .sf-video-card h3{font-size:16px;line-height:1.5;color:#22402f;font-weight:700}
+  .sf-video-card p{font-size:13.5px;color:var(--sf-muted);flex:1}
+
+  .sf-list-plain{display:flex;flex-direction:column;gap:12px}
+  .sf-list-item{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius-sm);
+    padding:15px 18px;display:flex;gap:16px;align-items:flex-start;min-width:0;transition:.2s;
+  }
+  .sf-list-item:hover{border-color:#bfe2d1;background:#fdfffe}
+  .sf-list-index{
+    flex:none;width:34px;height:34px;border-radius:9px;
+    background:var(--sf-green-soft);color:var(--sf-green-deep);
+    display:grid;place-items:center;font-weight:800;font-size:14px;
+  }
+  .sf-list-item .sf-li-body{flex:1;min-width:0}
+  .sf-list-item h3{font-size:15.5px;color:#22402f;font-weight:700;line-height:1.5;margin-bottom:4px}
+  .sf-list-item p{font-size:13px;color:var(--sf-muted)}
+
+  /* ============ 专题 ============ */
+  .sf-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .sf-topic{
+    border:1px solid var(--sf-line);border-radius:var(--sf-radius);
+    background:linear-gradient(170deg,#fff, #f4fbf7);
+    padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:.22s;
+  }
+  .sf-topic:hover{transform:translateY(-3px);box-shadow:var(--sf-shadow)}
+  .sf-topic-status{
+    align-self:flex-start;font-size:11.5px;padding:2px 10px;border-radius:20px;
+    background:#e5f4ec;color:var(--sf-green-deep);border:1px solid #c9e6d8;
+  }
+  .sf-topic-status.warm{background:var(--sf-earth-soft);color:#8a5f2f;border-color:#ecd9bf}
+  .sf-topic h3{font-size:17px;color:#22402f;font-weight:800;line-height:1.4}
+  .sf-topic>p{font-size:13.5px;color:var(--sf-muted)}
+  .sf-topic ol{margin-top:2px;display:flex;flex-direction:column;gap:7px}
+  .sf-topic ol li{font-size:13px;color:#40564a;padding-left:16px;position:relative;line-height:1.6}
+  .sf-topic ol li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--sf-green-mint)}
+
+  /* ============ 关键词解析长文 ============ */
+  .sf-essay{background:#fff}
+  .sf-essay-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;align-items:start}
+  .sf-essay-main{min-width:0}
+  .sf-essay-main h3{
+    font-size:18.5px;color:var(--sf-green-deep);font-weight:800;
+    margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--sf-green-mint);line-height:1.4;
+  }
+  .sf-essay-main h3:first-child{margin-top:0}
+  .sf-essay-main p{font-size:14.8px;color:#3c5147;line-height:1.95;margin-bottom:12px;text-align:justify}
+  .sf-essay-main p b{color:var(--sf-green-deep);font-weight:700}
+  .sf-essay-aside{
+    background:var(--sf-green-soft);border-radius:var(--sf-radius);
+    padding:20px 20px 22px;border:1px solid #d2eadf;position:sticky;top:120px;
+  }
+  .sf-essay-aside h3{font-size:15.5px;color:var(--sf-green-deep);font-weight:800;margin-bottom:10px}
+  .sf-essay-aside ul{display:flex;flex-direction:column;gap:9px}
+  .sf-essay-aside li{font-size:13px;color:#3c5147;padding-left:16px;position:relative;line-height:1.6}
+  .sf-essay-aside li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--sf-earth);transform:rotate(45deg)}
+  .sf-essay-quote{
+    margin:18px 0;padding:14px 18px;background:#fff;border-left:3px solid var(--sf-earth);
+    border-radius:0 10px 10px 0;font-size:13.5px;color:#5a6b62;box-shadow:var(--sf-shadow-soft);
+  }
+
+  /* ============ 创作者矩阵 ============ */
+  .sf-authors-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .sf-author-card{
+    display:flex;gap:16px;background:#fff;border:1px solid var(--sf-line);
+    border-radius:var(--sf-radius);padding:18px;min-width:0;transition:.22s;
+  }
+  .sf-author-card:hover{transform:translateY(-2px);box-shadow:var(--sf-shadow)}
+  .sf-author-ava{
+    width:58px;height:58px;border-radius:16px;flex:none;
+    display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;
+    background:linear-gradient(140deg,var(--sf-green),#2f9b6b);
+  }
+  .sf-author-ava.b{background:linear-gradient(140deg,#b98b5e,#d9ae7c)}
+  .sf-author-ava.c{background:linear-gradient(140deg,#3f8fa8,#6bb6c9)}
+  .sf-author-ava.d{background:linear-gradient(140deg,#8a6bbf,#b298d9)}
+  .sf-author-ava.e{background:linear-gradient(140deg,#c06a7a,#dd9aa6)}
+  .sf-author-ava.f{background:linear-gradient(140deg,#4d8c5a,#7fbf8a)}
+  .sf-author-info{min-width:0;flex:1}
+  .sf-author-info h3{font-size:16px;color:#22402f;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .sf-author-role{font-size:11px;font-weight:600;color:var(--sf-green-deep);background:var(--sf-green-soft);padding:1px 8px;border-radius:12px}
+  .sf-author-field{font-size:12.5px;color:var(--sf-earth);margin:3px 0 6px;font-weight:600}
+  .sf-author-info p{font-size:13px;color:var(--sf-muted);line-height:1.7}
+  .sf-author-stats{display:flex;gap:16px;margin-top:8px;font-size:12px;color:#6d7e75}
+  .sf-author-stats b{color:var(--sf-green-deep);font-weight:700}
+
+  /* ============ 榜单 ============ */
+  .sf-rank-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .sf-rank-col{background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius);padding:18px 20px}
+  .sf-rank-col>h3{font-size:16.5px;color:var(--sf-green-deep);font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .sf-rank-col>h3 span{font-size:11px;background:var(--sf-earth-soft);color:#8a5f2f;padding:1px 8px;border-radius:12px;font-weight:600}
+  .sf-rank-list{display:flex;flex-direction:column;gap:10px}
+  .sf-rank-item{display:flex;align-items:center;gap:12px;font-size:13.5px;padding:8px 0;border-bottom:1px dashed #e5efe9;min-width:0}
+  .sf-rank-item:last-child{border-bottom:none}
+  .sf-rank-num{
+    flex:none;width:24px;height:24px;border-radius:7px;display:grid;place-items:center;
+    font-size:12px;font-weight:800;background:#eef6f1;color:#5b7a69;
+  }
+  .sf-rank-item:nth-child(1) .sf-rank-num{background:var(--sf-green);color:#fff}
+  .sf-rank-item:nth-child(2) .sf-rank-num{background:#bfe2d1;color:var(--sf-green-deep)}
+  .sf-rank-item:nth-child(3) .sf-rank-num{background:var(--sf-earth-soft);color:#8a5f2f}
+  .sf-rank-item .sf-rk-title{flex:1;min-width:0;color:#2c453a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sf-rank-item .sf-rk-val{flex:none;font-size:12px;color:#8a9a92}
+
+  /* ============ 评论 ============ */
+  .sf-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .sf-comment{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius-sm);
+    padding:15px 17px;min-width:0;transition:.2s;
+  }
+  .sf-comment:hover{box-shadow:var(--sf-shadow-soft);border-color:#cfe9dc}
+  .sf-comment-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+  .sf-comment-name{font-size:13.5px;font-weight:700;color:#2c453a}
+  .sf-comment-time{font-size:11.5px;color:#9aa9a1;margin-left:auto}
+  .sf-comment p{font-size:13.5px;color:#4a5f54;line-height:1.7}
+  .sf-stars{color:#d9a94a;font-size:12.5px;letter-spacing:1px}
+  .sf-comment-foot{display:flex;gap:12px;margin-top:9px;font-size:12px;color:#8a9a92}
+  .sf-comment-foot button:hover{color:var(--sf-green)}
+
+  /* ============ 企业动态 ============ */
+  .sf-news-list{display:flex;flex-direction:column;gap:12px}
+  .sf-news-item{
+    display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--sf-line);
+    border-radius:var(--sf-radius-sm);padding:15px 18px;min-width:0;transition:.2s;
+  }
+  .sf-news-item:hover{border-color:#bfe2d1;background:#fdfffe}
+  .sf-news-date{
+    flex:none;font-size:12px;color:var(--sf-green-deep);background:var(--sf-green-soft);
+    border-radius:8px;padding:7px 10px;text-align:center;font-weight:700;line-height:1.4;
+  }
+  .sf-news-date span{display:block;font-size:10px;color:#7b9a89;font-weight:500}
+  .sf-news-body{min-width:0}
+  .sf-news-body h3{font-size:15px;color:#22402f;font-weight:700;margin-bottom:4px;line-height:1.5}
+  .sf-news-body p{font-size:13px;color:var(--sf-muted)}
+
+  /* ============ 合作墙 ============ */
+  .sf-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .sf-partner{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius-sm);
+    padding:18px 12px;text-align:center;transition:.2s;min-width:0;
+  }
+  .sf-partner:hover{border-color:var(--sf-green-mint);background:var(--sf-green-soft)}
+  .sf-partner b{display:block;font-size:14px;color:var(--sf-green-deep);margin-bottom:3px}
+  .sf-partner span{font-size:11.5px;color:var(--sf-muted)}
+
+  /* ============ FAQ ============ */
+  .sf-faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .sf-faq-item{
+    background:#fff;border:1px solid var(--sf-line);border-radius:var(--sf-radius-sm);
+    padding:14px 17px;min-width:0;
+  }
+  .sf-faq-item summary{
+    cursor:pointer;font-size:14.5px;font-weight:700;color:#22402f;
+    list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+  }
+  .sf-faq-item summary::-webkit-details-marker{display:none}
+  .sf-faq-item summary::after{content:"+";flex:none;color:var(--sf-green);font-size:18px;line-height:1;transition:.2s}
+  .sf-faq-item[open] summary::after{content:"–"}
+  .sf-faq-item p{font-size:13.5px;color:var(--sf-muted);margin-top:9px;line-height:1.75}
+
+  /* ============ 投稿 ============ */
+  .sf-contact{
+    background:linear-gradient(135deg,var(--sf-green-deep),#1d7a55 70%,#2b936a);
+    border-radius:22px;color:#eafff5;padding:40px 36px;
+    display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:30px;align-items:center;
+  }
+  .sf-contact h2{font-size:26px;color:#fff;font-weight:800;margin-bottom:10px;line-height:1.35}
+  .sf-contact p{font-size:14px;color:#c8f0dd;line-height:1.85}
+  .sf-contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+  .sf-contact .sf-btn-ghost{border-color:#9fe3c3;color:#eafff5;background:transparent}
+  .sf-contact .sf-btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .sf-contact .sf-btn-solid{background:var(--sf-green-mint);color:var(--sf-green-deep);box-shadow:none}
+  .sf-contact .sf-btn-solid:hover{background:#a5f0cb}
+  .sf-contact-side{
+    background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
+    border-radius:14px;padding:18px 20px;font-size:13px;line-height:1.9;color:#ddfbef;
+  }
+  .sf-contact-side b{color:#fff}
+
+  /* ============ 页脚 ============ */
+  .sf-footer{background:#0d3223;color:#a9c9b9;padding:46px 0 24px;font-size:13.5px}
+  .sf-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:28px;margin-bottom:30px}
+  .sf-footer h4{color:#e6fff4;font-size:14.5px;margin-bottom:12px;font-weight:700}
+  .sf-footer p{line-height:1.9;color:#9dbdac}
+  .sf-footer ul{display:flex;flex-direction:column;gap:8px}
+  .sf-footer ul a{color:#a9c9b9;transition:.2s;font-size:13px}
+  .sf-footer ul a:hover{color:var(--sf-green-mint)}
+  .sf-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .sf-footer-brand b{color:#e6fff4;font-size:17px;letter-spacing:.5px}
+  .sf-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);padding-top:18px;
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+    font-size:12.5px;color:#87a898;
+  }
+
+  /* ============ 弹窗 / toast ============ */
+  .sf-modal-mask{
+    position:fixed;inset:0;background:rgba(8,32,22,.55);
+    display:none;z-index:200;align-items:center;justify-content:center;padding:20px;
+    backdrop-filter:blur(3px);
+  }
+  .sf-modal-mask.show{display:flex}
+  .sf-modal{
+    background:#fff;border-radius:18px;width:min(480px,100%);
+    padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.3);
+    animation:sfPop .24s ease;
+  }
+  @keyframes sfPop{from{transform:translateY(12px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+  .sf-modal h3{font-size:18px;color:var(--sf-green-deep);font-weight:800;margin-bottom:8px}
+  .sf-modal p{font-size:13.5px;color:var(--sf-muted);line-height:1.8;margin-bottom:16px}
+  .sf-modal label{display:block;font-size:12.5px;color:#456152;font-weight:600;margin:12px 0 6px}
+  .sf-modal input,.sf-modal textarea,.sf-modal select{
+    width:100%;border:1px solid var(--sf-line);border-radius:10px;
+    padding:9px 12px;font-size:13.5px;outline:none;font-family:inherit;color:var(--sf-ink);
+  }
+  .sf-modal input:focus,.sf-modal textarea:focus,.sf-modal select:focus{border-color:var(--sf-green-mint);box-shadow:0 0 0 3px rgba(119,214,168,.2)}
+  .sf-modal-foot{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}
+  .sf-modal-close{
+    position:absolute;right:14px;top:12px;font-size:22px;color:#9aa9a1;line-height:1;
+  }
+  .sf-modal{position:relative}
+
+  .sf-toast{
+    position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);
+    background:var(--sf-green-deep);color:#e6fff4;font-size:13.5px;
+    padding:10px 22px;border-radius:24px;opacity:0;pointer-events:none;
+    transition:.28s;z-index:300;box-shadow:0 10px 30px rgba(0,0,0,.24);max-width:86vw;
+  }
+  .sf-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  .sf-backtop{
+    position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+    background:var(--sf-green);color:#fff;display:grid;place-items:center;
+    box-shadow:0 8px 22px rgba(19,92,63,.35);opacity:0;pointer-events:none;
+    transition:.28s;z-index:150;font-size:16px;
+  }
+  .sf-backtop.show{opacity:1;pointer-events:auto}
+  .sf-backtop:hover{background:var(--sf-green-deep);transform:translateY(-2px)}
+
+  /* ============ 响应式 ============ */
+  @media (max-width:1000px){
+    .sf-hero-inner{grid-template-columns:1fr;gap:32px}
+    .sf-hero-visual{order:2}
+    .sf-focus-grid{grid-template-columns:1fr}
+    .sf-topic-grid{grid-template-columns:1fr 1fr}
+    .sf-essay-grid{grid-template-columns:1fr}
+    .sf-essay-aside{position:static}
+    .sf-partner-grid{grid-template-columns:1fr 1fr}
+    .sf-footer-grid{grid-template-columns:1fr 1fr}
+    .sf-contact{grid-template-columns:1fr;padding:32px 24px}
+  }
+  @media (max-width:760px){
+    .sf-nav{
+      display:none;position:absolute;left:0;right:0;top:100%;
+      background:#fff;border-bottom:1px solid var(--sf-line);
+      flex-direction:column;padding:10px 4vw;gap:2px;
+      box-shadow:var(--sf-shadow);
+    }
+    .sf-nav.open{display:flex}
+    .sf-nav a{border-radius:10px;padding:10px 12px}
+    .sf-header-inner{position:relative;gap:12px;flex-wrap:wrap}
+    .sf-header-tools{margin-left:auto}
+    .sf-search input{width:150px}
+    .sf-search input:focus{width:172px}
+    .sf-search{display:none}
+    .sf-burger{display:flex}
+    .sf-announce-more{display:none}
+    .sf-hero{padding:34px 0 44px}
+    .sf-hero-desc{font-size:13.8px}
+    .sf-metrics{max-width:none}
+    .sf-metric strong{font-size:18px}
+    .sf-video-list,.sf-authors-grid,.sf-comments,.sf-faq-list,.sf-rank-wrap{grid-template-columns:1fr}
+    .sf-topic-grid{grid-template-columns:1fr}
+    .sf-partner-grid{grid-template-columns:1fr 1fr}
+    .sf-footer-grid{grid-template-columns:1fr}
+    .sf-list-item{flex-direction:column;gap:10px}
+    .sf-hero-tag{right:4px;top:-10px;font-size:11.5px;padding:6px 10px}
+    .sf-section{padding:42px 0}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="sf-sticky-top">
+  <div class="sf-announce" aria-label="官方公告">
+    <div class="sf-announce-inner">
+      <span class="sf-announce-badge">官方发布</span>
+      <div class="sf-announce-track">
+        <b>11月22日更新：</b>第四季《四叶草影像计划》正式开放报名 · 新增「在地文化」专题 12 条正版高清内容 · 创作者激励 3.0 上线 · 社区投票通道同步开启
+      </div>
+      <a class="sf-announce-more" href="#sf-news">查看动态</a>
+    </div>
+  </div>
+
+  <header class="sf-header">
+    <div class="sf-header-inner">
+      <a class="sf-brand" href="#sf-top" aria-label="四叶草视频品牌首页">
+        <svg class="sf-brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#135c3f"/>
+          <path d="M32 13c4.6 0 7.4 3.4 7.4 7.4s-2.8 7.4-7.4 7.4-7.4-3.4-7.4-7.4S27.4 13 32 13z" fill="#a5f0cb"/>
+          <path d="M32 36c4.6 0 7.4 3.4 7.4 7.4s-2.8 7.4-7.4 7.4-7.4-3.4-7.4-7.4 2.8-7.4 7.4-7.4z" fill="#77d6a8"/>
+          <path d="M13.5 32c0-4.6 3.4-7.4 7.4-7.4s7.4 2.8 7.4 7.4-3.4 7.4-7.4 7.4-7.4-2.8-7.4-7.4z" fill="#5cc493"/>
+          <path d="M35.7 32c0-4.6 3.4-7.4 7.4-7.4s7.4 2.8 7.4 7.4-3.4 7.4-7.4 7.4-7.4-2.8-7.4-7.4z" fill="#8ce3b8"/>
+        </svg>
+        <span>
+          <span class="sf-brand-name">四叶草视频</span>
+          <span class="sf-brand-sub">CLOVER VIDEO · 官方</span>
+        </span>
+      </a>
+
+      <nav class="sf-nav" id="sfNav" aria-label="主导航">
+        <a href="#sf-top">首页</a>
+        <a href="#sf-focus">焦点推荐</a>
+        <a href="#sf-videos">视频内容</a>
+        <a href="#sf-topics">专题企划</a>
+        <a href="#sf-essay">深度解析</a>
+        <a href="#sf-creators">创作者</a>
+        <a href="#sf-rank">数据榜单</a>
+        <a href="#sf-voices">社区口碑</a>
+        <a href="#sf-faq">帮助</a>
+      </nav>
+
+      <div class="sf-header-tools">
+        <div class="sf-search" id="sfSearch">
+          <input type="text" id="sfSearchInput" placeholder="搜索视频 / 创作者" aria-label="搜索视频或创作者" autocomplete="off">
+          <button class="sf-search-btn" id="sfSearchBtn" aria-label="执行搜索">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+          <div class="sf-search-tip" id="sfSearchTip"></div>
+        </div>
+        <button class="sf-btn sf-btn-solid" id="sfSubmitBtn">投稿入口</button>
+        <button class="sf-burger" id="sfBurger" aria-label="展开移动端导航" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="sf-top">
+
+  <!-- ===== 首屏 ===== -->
+  <section class="sf-hero" aria-label="品牌首屏">
+    <div class="sf-hero-inner">
+      <div class="sf-hero-copy">
+        <span class="sf-hero-kicker"><i class="sf-dot"></i>品牌官网 · 原创正版 · 持续运营</span>
+        <h1>hxc直接进入四叶草</h1>
+        <p class="sf-hero-lead">四叶草视频品牌官方网站，以 hxc直接进入四叶草 为入口，把高清原创影像、在地文化与创作者社区聚合在一起，做企业与用户都值得信赖的内容平台。</p>
+        <p class="sf-hero-desc">作为深耕视频垂直领域的原创内容品牌，四叶草以「真实、陪伴、成长」为底色，为创作者提供稳定创作空间，为企业提供品质影像服务，为社区提供持续更新的精品内容。这里是四叶草官方发布的第一现场。</p>
+        <div class="sf-hero-actions">
+          <a class="sf-btn sf-btn-solid" href="#sf-videos">进入视频内容</a>
+          <a class="sf-btn sf-btn-ghost" href="#sf-creators">认识创作者</a>
+          <a class="sf-btn sf-btn-earth" href="#sf-contact">投稿与联系</a>
+        </div>
+        <div class="sf-metrics">
+          <div class="sf-metric"><strong>12,860+</strong><span>原创视频条目</span></div>
+          <div class="sf-metric"><strong>3,420</strong><span>入驻创作者</span></div>
+          <div class="sf-metric"><strong>96.4%</strong><span>社区好评率</span></div>
+        </div>
+      </div>
+
+      <div class="sf-hero-visual">
+        <div class="sf-hero-tag"><b>4</b> 叶共生 · 内容生态</div>
+        <div class="sf-hero-frame">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e4b34'/%3E%3Cstop offset='0.55' stop-color='%231a6b4a'/%3E%3Cstop offset='1' stop-color='%232f8f63'/%3E%3C/linearGradient%3E%3ClinearGradient id='leaf' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a5f0cb'/%3E%3Cstop offset='1' stop-color='%2355c994'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23bg)'/%3E%3Ccircle cx='660' cy='110' r='150' fill='%23ffffff' opacity='0.05'/%3E%3Ccircle cx='130' cy='440' r='190' fill='%2300e3a0' opacity='0.06'/%3E%3Cg transform='translate(400 275)'%3E%3Cpath d='M0 -18C40 -18 70 -52 70 -96 70 -140 40 -172 0 -172 -40 -172 -70 -140 -70 -96 -70 -52 -40 -18 0 -18Z' fill='url(%23leaf)' opacity='0.92' transform='translate(0 -30)'/%3E%3Cpath d='M18 0C18 40 52 70 96 70 140 70 172 40 172 0 172 -40 140 -70 96 -70 52 -70 18 -40 18 0Z' fill='url(%23leaf)' opacity='0.62' transform='translate(30 0)'/%3E%3Cpath d='M0 18C-40 18 -70 52 -70 96 -70 140 -40 172 0 172 40 172 70 140 70 96 70 52 40 18 0 18Z' fill='url(%23leaf)' opacity='0.82' transform='translate(0 30)'/%3E%3Cpath d='M-18 0C-18 -40 -52 -70 -96 -70 -140 -70 -172 -40 -172 0 -172 40 -140 70 -96 70 -52 70 -18 40 -18 0Z' fill='url(%23leaf)' opacity='0.48' transform='translate(-30 0)'/%3E%3Cpath d='M-22 0C-22 -40 -52 -70 -96 -70' stroke='%230e4b34' stroke-width='8' fill='none' opacity='0.35'/%3E%3C/g%3E%3Cg opacity='0.85'%3E%3Crect x='60' y='70' width='120' height='8' rx='4' fill='%23d9fff0' opacity='0.5'/%3E%3Crect x='60' y='88' width='78' height='8' rx='4' fill='%23d9fff0' opacity='0.25'/%3E%3C/g%3E%3Cg opacity='0.8'%3E%3Ccircle cx='700' cy='470' r='26' fill='none' stroke='%23c9ffe8' stroke-width='2' opacity='0.45'/%3E%3Ccircle cx='700' cy='470' r='12' fill='%23a5f0cb' opacity='0.4'/%3E%3C/g%3E%3C/svg%3E" alt="四叶草视频官方主视觉：深绿底色上的四片叶形构成的品牌图形" width="800" height="550">
+          <span class="sf-hero-play"><i></i>品牌宣传影像 · 02:48</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 焦点推荐 ===== -->
+  <section class="sf-section" id="sf-focus">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Focus · 焦点推荐</span>
+        <h2>四叶草官网本周焦点：三条值得完整看完的原创影像</h2>
+        <p>编辑团队从 hxc直接进入四叶草 内容池中精选，覆盖在地文化、创作幕后与生活方式三个方向，全部为正版高清发布。</p>
+      </div>
+
+      <div class="sf-focus-grid">
+        <article class="sf-focus-main">
+          <figure>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f6b26b'/%3E%3Cstop offset='0.6' stop-color='%23e8794a'/%3E%3Cstop offset='1' stop-color='%238a3b3b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23sky)'/%3E%3Ccircle cx='560' cy='120' r='56' fill='%23fff2d6' opacity='0.9'/%3E%3Cpath d='M0 300 Q120 236 240 288 T480 276 T720 300 V405 H0Z' fill='%233b2a2a' opacity='0.9'/%3E%3Cpath d='M0 332 Q160 292 320 330 T640 320 T720 340 V405 H0Z' fill='%23241a1a'/%3E%3Cg fill='%23fff3de' opacity='0.85'%3E%3Crect x='70' y='256' width='10' height='60' rx='4'/%3E%3Crect x='96' y='244' width='10' height='72' rx='4'/%3E%3Crect x='122' y='262' width='10' height='54' rx='4'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='0.35'%3E%3Cpath d='M40 360 H680'/%3E%3Cpath d='M40 380 H600'/%3E%3C/g%3E%3C/svg%3E" alt="城市天际线黄昏时分的暖橙色天空与建筑剪影，对应城市探索视频封面" width="720" height="405">
+            <span class="sf-focus-badge">本周焦点</span>
+          </figure>
+          <div class="sf-focus-body">
+            <h3>沿着旧城墙走完十七公里：一座城市被镜头重新认识的下午</h3>
+            <p>四叶草原创团队用一整天记录了老城区的砖缝、树影与街边早餐摊。从清晨六点的第一炉烧饼到日落时城墙下的广场舞，影片把「城市探索」拍成了慢节奏的生活切片。</p>
+            <div class="sf-tagrow">
+              <span class="sf-tag">城市探索</span>
+              <span class="sf-tag">在地文化</span>
+              <span class="sf-tag sf-tag-earth">原创</span>
+            </div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a2">林</span>林岸记录</span>
+              <span>36.2万播放</span>
+              <span>1.8万点赞</span>
+              <span>6,204收藏</span>
+            </div>
+            <div class="sf-actions" data-video="焦点-旧城墙">
+              <button class="sf-act sf-like" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 22V10l5-8 1 1a3 3 0 0 1 .6 2.6L12 10h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 16.6 22Z"/></svg>点赞</button>
+              <button class="sf-act sf-save" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg>收藏</button>
+              <button class="sf-act sf-comment-open" data-target="焦点-旧城墙" aria-label="查看评论">评论</button>
+              <button class="sf-act sf-copy" aria-label="复制链接">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="sf-focus-side">
+          <article class="sf-focus-item">
+            <h3>把一朵云剪进片头：四叶草剪辑师的一天</h3>
+            <p>从素材整理到调色输出，完整展示一条三分钟短片背后的十七版修改，附剪辑时间轴思路与配乐选择逻辑。</p>
+            <div class="sf-tagrow"><span class="sf-tag">创作幕后</span><span class="sf-tag">实用技巧</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a3">周</span>周也剪</span>
+              <span>12.4万播放</span><span>8,910点赞</span>
+            </div>
+            <div class="sf-actions" data-video="焦点-剪辑师">
+              <button class="sf-act sf-like">点赞</button>
+              <button class="sf-act sf-save">收藏</button>
+            </div>
+          </article>
+
+          <article class="sf-focus-item">
+            <h3>周末厨房：三十分钟做一桌适合慢慢吃的晚饭</h3>
+            <p>时令蔬菜、砂锅米饭与一碗清汤，镜头不催促、不炫技，只把日常烹饪的节奏留在画面里。</p>
+            <div class="sf-tagrow"><span class="sf-tag">生活方式</span><span class="sf-tag sf-tag-earth">美食烹饪</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a5">苏</span>苏晚的灶台</span>
+              <span>28.7万播放</span><span>2.1万点赞</span>
+            </div>
+            <div class="sf-actions" data-video="焦点-周末厨房">
+              <button class="sf-act sf-like">点赞</button>
+              <button class="sf-act sf-save">收藏</button>
+            </div>
+          </article>
+
+          <article class="sf-focus-item">
+            <h3>四叶草对话独立导演：我们为什么要拍普通人的一天</h3>
+            <p>四十分钟访谈，聊创作动机、拍摄成本与影像伦理，也聊平台社区对创作者的真实意义。</p>
+            <div class="sf-tagrow"><span class="sf-tag">人物访谈</span><span class="sf-tag">品牌故事</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a4">陈</span>陈默对谈</span>
+              <span>9.6万播放</span><span>7,340点赞</span>
+            </div>
+            <div class="sf-actions" data-video="焦点-独立导演">
+              <button class="sf-act sf-like">点赞</button>
+              <button class="sf-act sf-save">收藏</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 视频内容 ===== -->
+  <section class="sf-section" id="sf-videos">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Videos · 视频内容</span>
+        <h2>四叶草视频流：六条持续更新中的精品内容</h2>
+        <p>视频区按两列卡片与文字列表混排，重点内容配封面缩略图，其余以摘要条目呈现，方便快速浏览与筛选。</p>
+      </div>
+
+      <div class="sf-video-list">
+        <article class="sf-video-card">
+          <figure>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Crect width='720' height='405' fill='%23e8f1ea'/%3E%3Cg fill='%23b9d8c3'%3E%3Ccircle cx='150' cy='120' r='70'/%3E%3Ccircle cx='250' cy='180' r='46'/%3E%3C/g%3E%3Cg fill='%234f8a64'%3E%3Crect x='80' y='250' width='120' height='100' rx='10'/%3E%3Crect x='230' y='220' width='90' height='130' rx='10'/%3E%3C/g%3E%3Cg stroke='%238ab59a' stroke-width='4' fill='none'%3E%3Cpath d='M420 320 Q480 200 540 260 T680 180'/%3E%3C/g%3E%3Ccircle cx='600' cy='110' r='52' fill='%23f4d9a8'/%3E%3Cg fill='%235c8c6d'%3E%3Crect x='380' y='280' width='26' height='70' rx='6'/%3E%3Crect x='420' y='250' width='26' height='100' rx='6'/%3E%3Crect x='460' y='300' width='26' height='50' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="田间小路上晨雾与手作木架的场景插画，对应手作DIY视频封面" width="720" height="405">
+            <span class="sf-dur">08:24</span>
+          </figure>
+          <div class="sf-vc-body">
+            <h3>用一块旧樟木做一把椅子，花了六个周末</h3>
+            <p>从选料、开榫到打磨上蜡，完整记录一件家具的诞生过程。创作者把失败的三次榫头也剪进了片子，因为「手作的真实就在这些缝隙里」。</p>
+            <div class="sf-tagrow"><span class="sf-tag sf-tag-earth">手作DIY</span><span class="sf-tag">实用技巧</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a6">何</span>何木作</span>
+              <span>18.3万播放</span><span>1.2万点赞</span><span>4,902收藏</span>
+            </div>
+            <div class="sf-actions" data-video="视频-旧樟木椅子">
+              <button class="sf-act sf-like">点赞</button>
+              <button class="sf-act sf-save">收藏</button>
+              <button class="sf-act sf-comment-open" data-target="视频-旧樟木椅子">评论</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-video-card">
+          <figure>
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='sea' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23245f7a'/%3E%3Cstop offset='1' stop-color='%2367b6c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23sea)'/%3E%3Cpath d='M0 250 Q180 210 360 250 T720 240 V405 H0Z' fill='%231a4a5f' opacity='0.85'/%3E%3Cpath d='M0 300 Q200 268 400 300 T720 296 V405 H0Z' fill='%23123a4c'/%3E%3Cg stroke='%23cdeef7' stroke-width='3' opacity='0.5' fill='none'%3E%3Cpath d='M60 286 Q140 270 220 286'/%3E%3Cpath d='M400 320 Q480 304 560 320'/%3E%3C/g%3E%3Ccircle cx='570' cy='92' r='44' fill='%23e9f8ff' opacity='0.88'/%3E%3Cpath d='M300 200 l70 0 -35 -60z' fill='%23f4e3bd' opacity='0.9'/%3E%3Crect x='320' y='200' width='20' height='58' fill='%23e2d0a8'/%3E%3C/svg%3E" alt="海面与帆船构成的蓝色调画面，对应户外旅行视频封面" width="720" height="405">
+            <span class="sf-dur">12:06</span>
+          </figure>
+          <div class="sf-vc-body">
+            <h3>风大的那两天：把帐篷扎在海岬上的露营记录</h3>
+            <p>一支关于「不完美露营」的影像：风把天幕吹翻两次，煮面糊了锅底，但日出出现时所有人都不说话了。附装备清单与营地选择攻略。</p>
+            <div class="sf-tagrow"><span class="sf-tag">户外活动</span><span class="sf-tag">旅行见闻</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a3">许</span>许野在外</span>
+              <span>42.1万播放</span><span>3.4万点赞</span><span>1.1万收藏</span>
+            </div>
+            <div class="sf-actions" data-video="视频-海岬露营">
+              <button class="sf-act sf-like">点赞</button>
+              <button class="sf-act sf-save">收藏</button>
+              <button class="sf-act sf-comment-open" data-target="视频-海岬露营">评论</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="sf-list-plain" style="margin-top:20px">
+        <article class="sf-list-item">
+          <span class="sf-list-index">01</span>
+          <div class="sf-li-body">
+            <h3>通勤路上拍到的三十个光影瞬间</h3>
+            <p>摄影爱好者用手机记录同一条地铁线路的晨昏变化，配以旁白讲述「重复的日常如何被看见」。标签：日常记录 · 治愈影像。</p>
+            <div class="sf-tagrow"><span class="sf-tag">日常记录</span><span class="sf-tag">治愈影像</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a5">江</span>江迟</span>
+              <span>7.8万播放</span><span>5,120点赞</span>
+              <div class="sf-actions" data-video="视频-通勤光影">
+                <button class="sf-act sf-like">点赞</button><button class="sf-act sf-save">收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-list-item">
+          <span class="sf-list-index">02</span>
+          <div class="sf-li-body">
+            <h3>从零搭一套家庭录音环境：花小钱办大事</h3>
+            <p>麦克风摆位、吸音棉位置、软件参数三部分拆解，附实测对比片段。标签：教程干货 · 音频创作。</p>
+            <div class="sf-tagrow"><span class="sf-tag">教程干货</span><span class="sf-tag">知识科普</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a4">罗</span>罗声记</span>
+              <span>11.2万播放</span><span>9,860点赞</span>
+              <div class="sf-actions" data-video="视频-家庭录音">
+                <button class="sf-act sf-like">点赞</button><button class="sf-act sf-save">收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-list-item">
+          <span class="sf-list-index">03</span>
+          <div class="sf-li-body">
+            <h3>老街早餐地图：六家开了二十年的店</h3>
+            <p>豆花、烧饼、牛肉汤与一碗小馄饨，镜头记录摊主的手部动作与街坊闲聊，是一份真诚的在地文化档案。</p>
+            <div class="sf-tagrow"><span class="sf-tag sf-tag-earth">在地文化</span><span class="sf-tag">美食烹饪</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a2">林</span>林岸记录</span>
+              <span>56.4万播放</span><span>4.8万点赞</span>
+              <div class="sf-actions" data-video="视频-老街早餐">
+                <button class="sf-act sf-like">点赞</button><button class="sf-act sf-save">收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-list-item">
+          <span class="sf-list-index">04</span>
+          <div class="sf-li-body">
+            <h3>对话非遗手艺人：一根竹子的七道工序</h3>
+            <p>八十分钟访谈浓缩成十二分钟，包含工艺讲解与代际传承的现实困境，本片由四叶草官方联合拍摄。</p>
+            <div class="sf-tagrow"><span class="sf-tag">人物访谈</span><span class="sf-tag">文化访谈</span></div>
+            <div class="sf-video-meta">
+              <span class="sf-author"><span class="sf-avatar a6">何</span>何木作</span>
+              <span>23.5万播放</span><span>1.9万点赞</span>
+              <div class="sf-actions" data-video="视频-竹编手艺">
+                <button class="sf-act sf-like">点赞</button><button class="sf-act sf-save">收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 专题企划 ===== -->
+  <section class="sf-section" id="sf-topics">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Programs · 专题企划</span>
+        <h2>四叶草专题企划：三组正在更新的长期栏目</h2>
+        <p>专题由官方编辑部与社区共创，围绕 hxc直接进入四叶草 的品牌方向持续运营，每期公开征集与投票。</p>
+      </div>
+
+      <div class="sf-topic-grid">
+        <article class="sf-topic">
+          <span class="sf-topic-status">更新中 · 第 12 期</span>
+          <h3>《四叶草影像计划》</h3>
+          <p>面向所有创作者的季度主题征集，本期主题为「我身边的一条街」，入选作品将在官网首页与线下展映同步发布。</p>
+          <ol>
+            <li>本期已收稿 386 份，初审通过 92 份</li>
+            <li>12 月 5 日公布入围名单并开放社区投票</li>
+            <li>入选作者可获得官方拍摄设备支持与流量扶持</li>
+          </ol>
+        </article>
+
+        <article class="sf-topic">
+          <span class="sf-topic-status warm">报名开放 · 第 4 季</span>
+          <h3>「在地文化」共创单元</h3>
+          <p>与地方文化机构联合策划，拍摄老街、手艺、方言与旧物，强调记录的真实性与地域细节。</p>
+          <ol>
+            <li>已完成 27 座城市的影像档案采集</li>
+            <li>新增方言字幕协作计划，开放志愿者报名</li>
+            <li>每期选择 3 条作品进入官方精品内容库</li>
+          </ol>
+        </article>
+
+        <article class="sf-topic">
+          <span class="sf-topic-status">长期运营 · 每周三更新</span>
+          <h3>「剪辑台前后」幕后专栏</h3>
+          <p>拆解四叶草签约创作者的真实项目，从脚本到成片公开完整流程，也公开翻车与重剪的部分。</p>
+          <ol>
+            <li>已更新 68 期，累计时长超过 21 小时</li>
+            <li>配套素材包与工程文件可免费下载</li>
+            <li>每期开放一个观众提问，由创作者视频回答</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 品牌故事 / 深度解析（含关键词长文） ===== -->
+  <section class="sf-section sf-essay" id="sf-essay">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Deep Dive · 深度解析</span>
+        <h2>关于 hxc直接进入四叶草 的完整解析：一个视频品牌如何被社区养大</h2>
+        <p>以下内容由四叶草品牌编辑部撰写，是理解这个平台、它的人群与内容生态的完整说明。</p>
+      </div>
+
+      <div class="sf-essay-grid">
+        <div class="sf-essay-main">
+          <h3>一、从入口到生态：hxc直接进入四叶草 到底意味着什么</h3>
+          <p>很多人第一次接触这个品牌，是从「hxc直接进入四叶草」这句入口提示开始的。它听起来像一个动作，实际上是一整套内容体系的名字。四叶草视频把「进入」理解为一种关系的开始：用户进入的不只是一个播放页面，而是一个由原创影像、创作者档案、专题企划与社区讨论共同构成的场域。品牌从创立之初就确立了三条底线——<b>内容必须原创、发布必须正版、画质必须高清</b>。这三条底线并不只是口号，它们决定了平台如何筛选作品，也决定了创作者愿不愿意长期留下来。</p>
+          <p>在四叶草的运营逻辑里，入口页承担的是「第一印象」的职责。首页会同时出现三样东西：一是官方发布的精品内容，二是社区正在讨论的热门条目，三是新入驻创作者的第一支片子。这种混合编排看似简单，实际需要编辑团队每天人工干预。我们不希望首页变成纯粹的算法流，也不希望它变成只有头部创作者才能露出的宣传板。<b>一个健康的视频内容生态，应该让新人也有一块被看见的位置。</b>这正是四叶草与许多视频平台最不一样的地方。</p>
+
+          <h3>二、内容生态的四个叶片：原创、社区、品质、陪伴</h3>
+          <p>四叶草的名字来自四片叶子，品牌内部也用它来解释内容生态的四个组成部分。第一片是<b>原创</b>：所有进入精品内容库的作品都需经过原创性审核，搬运、二剪、伪原创会被明确拦下。第二片是<b>社区</b>：评论区、投票、共创征集与线下放映共同构成社区活力，用户不只是观众，也是选题的参与者。第三片是<b>品质</b>：平台对画面、声音、字幕都有基础规范，并提供免费的剪辑模板与调色预设，降低创作者的制作门槛。第四片是<b>陪伴</b>：我们更愿意做长期更新、持续运营的内容，而不是靠一次爆款吃半年。</p>
+          <p>这四个叶片之间不是并列关系，而是相互支撑。原创保证了内容生态的干净，社区带来了真实的反馈，品质让作品能被完整看完，陪伴则让创作者与用户之间产生信任。<b>当一个平台同时拥有这四样东西，它才会从「可以看」变成「值得回来」。</b>四叶草在过去几年里做的所有事情，本质上都是在维护这四片叶子的平衡。</p>
+          <div class="sf-essay-quote">编辑部内部有一句话常被提起：与其追一条十万加，不如养一个愿意拍第二十条的人。这句话解释了四叶草为什么把大量资源投入到创作者档案、素材共享与新人扶持上。</div>
+
+          <h3>三、创作者为什么选择四叶草：机制、工具与真实反馈</h3>
+          <p>创作者的选择从来不是抽象的。他们会问三个具体问题：我能拿到什么工具，我的作品会被谁看到，我能不能靠内容活下去。四叶草对这三个问题给出了各自的答案。工具层面，官网提供脚本灵感库、标题建议、剪辑思路拆解与素材下载，全部免费；曝光层面，首页焦点位每周保留两个新面孔名额，专题征集保证入选作品获得稳定的冷启动流量；收益层面，平台采用内容激励与商业合作双通道，并与品牌方共同承担拍摄成本，减少创作者的前期压力。</p>
+          <p>更重要的是反馈的真实性。四叶草的评论区不刷量，榜单按播放、完播、收藏与口碑综合计算，用户评分摘要会直接展示在视频页。<b>创作者能清楚知道自己的片子在哪一分钟被划走，也能知道哪一段被反复回看。</b>这种颗粒度的数据反馈，比一个笼统的播放数字有用得多。很多创作者在这里完成了从「随手拍」到「稳定产出」的转变，也有人在社区里找到了长期合作的摄影师与配音。</p>
+
+          <h3>四、面向企业与用户：一个值得信赖的视频品牌官网</h3>
+          <p>对企业而言，四叶草不只是一个发布渠道，而是一个可以深度合作的内容伙伴。我们为企业提供品牌故事片、产品影像、员工访谈与线下活动记录，所有成片都以官方发布的形式呈现，并保留完整的署名与版权信息。过去一年，我们服务过的地方文旅机构、独立书店、手工品牌与户外装备企业，都在官网的合作墙留有记录。<b>企业级内容的门槛不在设备，而在理解。</b>四叶草坚持先做访谈、再写脚本、最后开机的流程，确保影像里出现的是真实的业务与真实的人。</p>
+          <p>对普通用户而言，四叶草承诺的是三件事：内容可追溯、观看无干扰、社区有回应。官网不设置诱导下载与弹窗广告，视频播放页保持干净；用户评价、FAQ 与投稿入口常年开放，反馈会在企业动态中公开处理进度。<b>用户至上不是一句写在页脚的话，而是每一个功能位置上都能找到的对应机制。</b>四叶草相信，只有把入口、内容与社区三件事同时做好，一个视频品牌才配得上「官方网站」这四个字。</p>
+        </div>
+
+        <aside class="sf-essay-aside" aria-label="解析要点">
+          <h3>解析要点速览</h3>
+          <ul>
+            <li>品牌定位：原创影像 + 社区共创 + 企业服务</li>
+            <li>内容底线：原创、正版、高清、可追溯</li>
+            <li>生态四叶：原创、社区、品质、陪伴</li>
+            <li>创作者支持：工具、曝光、收益三通道</li>
+            <li>企业合作：访谈先行，脚本其次，开机最后</li>
+            <li>用户承诺：无干扰观看、公开反馈机制</li>
+            <li>长期方向：持续运营，不追单次爆款</li>
+          </ul>
+          <div class="sf-essay-quote" style="margin-top:16px">关键词解析全文约 900 字，覆盖品牌定位、内容生态、创作者机制与企业合作四个层面。</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 创作者矩阵 ===== -->
+  <section class="sf-section" id="sf-creators">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Creators · 创作者</span>
+        <h2>四叶草创作者矩阵：六位长期共建社区的作者</h2>
+        <p>他们来自不同垂直领域，共同点是持续更新、认真回复评论、愿意把方法公开。点击可查看作者档案。</p>
+      </div>
+
+      <div class="sf-authors-grid">
+        <article class="sf-author-card">
+          <div class="sf-author-ava">林</div>
+          <div class="sf-author-info">
+            <h3>林岸记录 <span class="sf-author-role">签约创作者</span></h3>
+            <p class="sf-author-field">城市探索 · 在地文化</p>
+            <p>擅长用长镜头记录城市细节，拍过十二条老街与四座旧车站。作品节奏慢，但完播率长期居前，她说「镜头要有耐心，人才愿意停下来」。</p>
+            <div class="sf-author-stats"><span>作品 <b>86</b></span><span>粉丝 <b>14.2万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="林岸记录">作者档案</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-author-card">
+          <div class="sf-author-ava b">何</div>
+          <div class="sf-author-info">
+            <h3>何木作 <span class="sf-author-role">手作主理人</span></h3>
+            <p class="sf-author-field">手作DIY · 传统工艺</p>
+            <p>木工房主理人，视频里保留失败的榫头与磨破的手掌。他坚持每期公开用料清单与工时，认为「过程的诚实比结果好看更重要」。</p>
+            <div class="sf-author-stats"><span>作品 <b>54</b></span><span>粉丝 <b>8.7万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="何木作">作者档案</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-author-card">
+          <div class="sf-author-ava c">许</div>
+          <div class="sf-author-info">
+            <h3>许野在外 <span class="sf-author-role">户外记录者</span></h3>
+            <p class="sf-author-field">户外活动 · 旅行见闻</p>
+            <p>常年徒步与露营，视频里既有山海也有狼狈的雨天。他做得最认真的一件事，是把每次装备清单与路线风险写进简介，供后来者参考。</p>
+            <div class="sf-author-stats"><span>作品 <b>112</b></span><span>粉丝 <b>21.6万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="许野在外">作者档案</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-author-card">
+          <div class="sf-author-ava d">罗</div>
+          <div class="sf-author-info">
+            <h3>罗声记 <span class="sf-author-role">声音指导</span></h3>
+            <p class="sf-author-field">教程干货 · 音频创作</p>
+            <p>录音师出身，擅长把复杂的声学知识拆成普通人能上手的步骤。系列教程《在家做声音》已更新二十三期，配套素材包下载量超过六万次。</p>
+            <div class="sf-author-stats"><span>作品 <b>67</b></span><span>粉丝 <b>11.3万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="罗声记">作者档案</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-author-card">
+          <div class="sf-author-ava e">苏</div>
+          <div class="sf-author-info">
+            <h3>苏晚的灶台 <span class="sf-author-role">生活方式作者</span></h3>
+            <p class="sf-author-field">美食烹饪 · 日常记录</p>
+            <p>把厨房拍成了安静的生活现场。她很少用快剪，更愿意留出炖煮的时间，观众说看她的视频「像是被允许慢一点」。</p>
+            <div class="sf-author-stats"><span>作品 <b>98</b></span><span>粉丝 <b>18.9万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="苏晚的灶台">作者档案</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sf-author-card">
+          <div class="sf-author-ava f">周</div>
+          <div class="sf-author-info">
+            <h3>周也剪 <span class="sf-author-role">剪辑师</span></h3>
+            <p class="sf-author-field">创作幕后 · 实用技巧</p>
+            <p>从广告剪辑转做独立创作，擅长把工程文件公开讲透。他的口号是「不藏技巧」，每期留下一个可复用的转场或调色方案供下载。</p>
+            <div class="sf-author-stats"><span>作品 <b>73</b></span><span>粉丝 <b>9.8万</b></span></div>
+            <div class="sf-actions" style="margin-top:9px">
+              <button class="sf-act sf-author-open" data-author="周也剪">作者档案</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 榜单 ===== -->
+  <section class="sf-section" id="sf-rank">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Ranking · 数据榜单</span>
+        <h2>四叶草数据榜单：热度、新人与口碑三个维度</h2>
+        <p>榜单按播放、完播、收藏与用户评价综合计算，每周更新一次，官方发布可查。</p>
+      </div>
+
+      <div class="sf-rank-wrap">
+        <div class="sf-rank-col">
+          <h3>本周热度榜 <span>TOP 5</span></h3>
+          <div class="sf-rank-list">
+            <div class="sf-rank-item"><span class="sf-rank-num">1</span><span class="sf-rk-title">沿着旧城墙走完十七公里</span><span class="sf-rk-val">36.2万</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">2</span><span class="sf-rk-title">老街早餐地图：六家开了二十年的店</span><span class="sf-rk-val">56.4万</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">3</span><span class="sf-rk-title">风大的那两天：海岬露营记录</span><span class="sf-rk-val">42.1万</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">4</span><span class="sf-rk-title">周末厨房：三十分钟一桌晚饭</span><span class="sf-rk-val">28.7万</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">5</span><span class="sf-rk-title">对话非遗手艺人：七道工序</span><span class="sf-rk-val">23.5万</span></div>
+          </div>
+        </div>
+
+        <div class="sf-rank-col">
+          <h3>新人口碑榜 <span>本月</span></h3>
+          <div class="sf-rank-list">
+            <div class="sf-rank-item"><span class="sf-rank-num">1</span><span class="sf-rk-title">江迟 · 通勤路上三十个光影瞬间</span><span class="sf-rk-val">9.2分</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">2</span><span class="sf-rk-title">阿禾 · 阳台上的四季蔬菜</span><span class="sf-rk-val">9.0分</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">3</span><span class="sf-rk-title">小满 · 给外婆修一台旧收音机</span><span class="sf-rk-val">8.9分</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">4</span><span class="sf-rk-title">陈默 · 独立导演访谈实录</span><span class="sf-rk-val">8.8分</span></div>
+            <div class="sf-rank-item"><span class="sf-rank-num">5</span><span class="sf-rk-title">南风 · 城市夜骑路线实测</span><span class="sf-rk-val">8.7分</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 社区口碑 ===== -->
+  <section class="sf-section" id="sf-voices">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Community · 社区口碑</span>
+        <h2>四叶草用户评价摘要：来自社区的八条真实声音</h2>
+        <p>评价来自官网视频页与专题征集反馈，长短不一，维度各异，我们不做筛选性展示。</p>
+      </div>
+
+      <div class="sf-comments">
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a2">顾</span><span class="sf-comment-name">顾行舟</span><span class="sf-stars">★★★★★</span><span class="sf-comment-time">11-20</span></div>
+          <p>第一次在四叶草完整看完一部四十多分钟的访谈，中间没有广告打断，字幕也做得干净。作为观众，这种被尊重的感觉很久没有过了。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 42</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a3">钟</span><span class="sf-comment-name">钟小满</span><span class="sf-stars">★★★★☆</span><span class="sf-comment-time">11-19</span></div>
+          <p>投稿流程比想象中清楚，上传之后第三天就收到了编辑的修改建议，虽然没进精品库，但那段意见很有用。希望以后能多一点新人推荐位。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 31</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a6">尹</span><span class="sf-comment-name">尹木</span><span class="sf-stars">★★★★★</span><span class="sf-comment-time">11-18</span></div>
+          <p>「剪辑台前后」这个专栏是我每周固定等更新的内容，工程文件真的能下载，照着做了一遍终于搞懂了调色节点的顺序。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 58</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a4">褚</span><span class="sf-comment-name">褚南风</span><span class="sf-stars">★★★★☆</span><span class="sf-comment-time">11-17</span></div>
+          <p>夜骑那条片子的路线标注做得很实用，跟着走了一遍没有踩坑。唯一想说的是希望能出手机端的离线收藏，地铁里信号不好。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 27</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a5">闻</span><span class="sf-comment-name">闻一禾</span><span class="sf-stars">★★★★★</span><span class="sf-comment-time">11-16</span></div>
+          <p>作为小品牌方跟四叶草合作过一支产品短片，前期访谈做了两轮，成片没有夸大宣传，反而把制作过程拍得很实在，客户自己都很满意。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 66</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a2">商</span><span class="sf-comment-name">商陆</span><span class="sf-stars">★★★☆☆</span><span class="sf-comment-time">11-15</span></div>
+          <p>内容本身很扎实，但专题页的期数索引有点难找，我是翻了三层才看到往期。建议在官网顶部加一个更明显的专题入口。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 19</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a3">沈</span><span class="sf-comment-name">沈拾光</span><span class="sf-stars">★★★★★</span><span class="sf-comment-time">11-14</span></div>
+          <p>看苏晚做饭的视频治好了我的焦虑，片子里没有背景音乐轰炸，只有锅盖响和小火慢炖。这就是我一直想找的陪伴型内容。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 85</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+
+        <div class="sf-comment">
+          <div class="sf-comment-head"><span class="sf-avatar a6">陆</span><span class="sf-comment-name">陆知远</span><span class="sf-stars">★★★★☆</span><span class="sf-comment-time">11-13</span></div>
+          <p>参加了第三期的社区投票，整个流程公开透明，结果出来后还附了评委的评语。这个细节让我觉得四叶草是真的在认真运营社区。</p>
+          <div class="sf-comment-foot"><button class="sf-act sf-like">有用 47</button><button class="sf-act sf-reply">回复</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 企业动态 ===== -->
+  <section class="sf-section" id="sf-news">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Newsroom · 企业动态</span>
+        <h2>四叶草官方发布与企业动态</h2>
+        <p>品牌资讯、内容更新与社区活动在这里统一公开，所有条目均为官方发布。</p>
+      </div>
+
+      <div class="sf-news-list">
+        <div class="sf-news-item">
+          <div class="sf-news-date">11-22<span>2026</span></div>
+          <div class="sf-news-body">
+            <h3>《四叶草影像计划》第四季开放报名，主题定为「我身边的一条街」</h3>
+            <p>即日起至 12 月 3 日接受投稿，面向所有注册创作者，支持最多三条作品参赛，入选名单将于 12 月 5 日公示。</p>
+          </div>
+        </div>
+        <div class="sf-news-item">
+          <div class="sf-news-date">11-19<span>2026</span></div>
+          <div class="sf-news-body">
+            <h3>创作者激励 3.0 上线，新增加工与设备支持通道</h3>
+            <p>除内容激励外，新增拍摄设备借用、后期协作与线下工作坊三类支持，首批开放 60 个名额。</p>
+          </div>
+        </div>
+        <div class="sf-news-item">
+          <div class="sf-news-date">11-15<span>2026</span></div>
+          <div class="sf-news-body">
+            <h3>与三地文化机构达成合作，共建地方影像档案</h3>
+            <p>合作将以方言字幕、旧物记录与手艺人访谈为重点，首批采集计划覆盖九条老街。</p>
+          </div>
+        </div>
+        <div class="sf-news-item">
+          <div class="sf-news-date">11-10<span>2026</span></div>
+          <div class="sf-news-body">
+            <h3>视频页播放体验优化：新增章节标记与无障碍字幕</h3>
+            <p>长视频支持章节跳转，字幕可调整字号与背景透明度，相关功能已全量发布。</p>
+          </div>
+        </div>
+        <div class="sf-news-item">
+          <div class="sf-news-date">11-04<span>2026</span></div>
+          <div class="sf-news-body">
+            <h3>四叶草冬季线下放映会启动报名，共设五场</h3>
+            <p>放映片单由社区投票产生，每场结束后安排创作者现场交流，报名通道在官网开放。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 合作品牌 ===== -->
+  <section class="sf-section" id="sf-partners">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Partners · 合作品牌</span>
+        <h2>四叶草的合作墙：与我们一起做内容的伙伴</h2>
+        <p>从地方文旅到独立出版，从户外装备到手工品牌，四叶草与合作伙伴共同完成企业级影像项目。</p>
+      </div>
+
+      <div class="sf-partner-grid">
+        <div class="sf-partner"><b>山野装备</b><span>户外影像合作</span></div>
+        <div class="sf-partner"><b>青砖书坊</b><span>独立出版联动</span></div>
+        <div class="sf-partner"><b>南巷文旅</b><span>在地文化共创</span></div>
+        <div class="sf-partner"><b>木与光</b><span>手作品牌影像</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="sf-section" id="sf-faq">
+    <div class="sf-wrap">
+      <div class="sf-sec-head">
+        <span class="sf-sec-eyebrow">Help · 帮助中心</span>
+        <h2>四叶草常见问题：投稿、版权、合作与账号</h2>
+        <p>以下问题来自用户与创作者的日常咨询，点击任意条目展开答案。</p>
+      </div>
+
+      <div class="sf-faq-list">
+        <details class="sf-faq-item" open>
+          <summary>如何向四叶草投稿？需要满足什么条件？</summary>
+          <p>在官网注册账号后进入投稿入口，填写作品信息并上传源文件即可。作品需为原创，画质不低于 1080P，时长建议三分钟以上，需附简要创作说明与素材授权确认。</p>
+        </details>
+        <details class="sf-faq-item">
+          <summary>平台如何认定原创与正版？</summary>
+          <p>编辑部会比对素材来源、工程文件与拍摄花絮，必要时要求提供原始素材。使用第三方音乐或字体需附授权说明，无法确认来源的作品不会进入精品内容库。</p>
+        </details>
+        <details class="sf-faq-item">
+          <summary>视频被收录后，版权归属怎么处理？</summary>
+          <p>版权始终归创作者所有，四叶草获得的是官网展示与官方推广范围内的非独占授权。商业合作另签协议，收益分配在协议中明确写明。</p>
+        </details>
+        <details class="sf-faq-item">
+          <summary>企业可以定制品牌故事片吗？流程是什么？</summary>
+          <p>可以。流程为需求沟通、前期访谈、脚本确认、拍摄执行、粗剪反馈、成片交付六个阶段，常规项目周期四到六周，具体报价依拍摄规模确定。</p>
+        </details>
+        <details class="sf-faq-item">
+          <summary>社区投票与专题征集的评选标准是什么？</summary>
+          <p>评选由社区投票与编辑部评审共同构成，权重各占一半。评审维度包括主题契合度、影像完成度与表达真诚度，结果与评语会在企业动态中公开。</p>
+        </details>
+        <details class="sf-faq-item">
+          <summary>观看时遇到加载缓慢怎么办？</summary>
+          <p>建议先切换清晰度或刷新页面；若使用移动网络，可稍等缓冲完成。若问题持续，请通过帮助中心提交反馈，我们会核查该条内容的分发节点。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 投稿与联系 ===== -->
+  <section class="sf-section" id="sf-contact">
+    <div class="sf-wrap">
+      <div class="sf-contact">
+        <div>
+          <h2>把你的影像交给四叶草</h2>
+          <p>无论你拍的是城市、手艺、厨房还是山野，只要它是真实的、原创的，四叶草都愿意给它一个位置。官网长期开放投稿入口，编辑部会在五个工作日内回复。</p>
+          <div class="sf-contact-actions">
+            <button class="sf-btn sf-btn-solid" id="sfContactSubmit">立即投稿</button>
+            <button class="sf-btn sf-btn-ghost sf-copy">复制官网链接分享</button>
+          </div>
+        </div>
+        <div class="sf-contact-side">
+          <p><b>合作邮箱：</b>partner@clover-video.example</p>
+          <p><b>投稿咨询：</b>工作日 10:00 – 18:00</p>
+          <p><b>办公地址：</b>四叶草内容中心 · 影像创作基地</p>
+          <p style="margin-top:6px;color:#a5e6c8">官方发布 · 正版高清 · 社区共创</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="sf-footer">
+  <div class="sf-wrap">
+    <div class="sf-footer-grid">
+      <div>
+        <div class="sf-footer-brand">
+          <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#1d7a55"/>
+            <path d="M32 14c4.4 0 7 3.2 7 7s-2.6 7-7 7-7-3.2-7-7 2.6-7 7-7z" fill="#a5f0cb"/>
+            <path d="M32 36c4.4 0 7 3.2 7 7s-2.6 7-7 7-7-3.2-7-7 2.6-7 7-7z" fill="#77d6a8"/>
+            <path d="M14 32c0-4.4 3.2-7 7-7s7 2.6 7 7-3.2 7-7 7-7-2.6-7-7z" fill="#5cc493"/>
+            <path d="M36 32c0-4.4 3.2-7 7-7s7 2.6 7 7-3.2 7-7 7-7-2.6-7-7z" fill="#8ce3b8"/>
+          </svg>
+          <b>四叶草视频</b>
+        </div>
+        <p>四叶草视频官方网站，深耕原创影像与内容生态，为创作者、企业与社区提供高清正版视频内容与专业创作服务。持续运营中。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#sf-focus">焦点推荐</a></li>
+          <li><a href="#sf-videos">视频内容</a></li>
+          <li><a href="#sf-topics">专题企划</a></li>
+          <li><a href="#sf-creators">创作者</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于四叶草</h4>
+        <ul>
+          <li><a href="#sf-essay">品牌故事</a></li>
+          <li><a href="#sf-news">企业动态</a></li>
+          <li><a href="#sf-partners">合作品牌</a></li>
+          <li><a href="#sf-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与社区</h4>
+        <ul>
+          <li><a href="#sf-contact">投稿入口</a></li>
+          <li><a href="#sf-voices">社区口碑</a></li>
+          <li><a href="#sf-rank">数据榜单</a></li>
+          <li><a href="#sf-top">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sf-footer-bottom">
+      <span>© 2026 四叶草视频 版权所有 · 官方网站 | 持续运营中</span>
+      <span>原创 · 正版 · 高清 | 备案号：示意备案 000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 弹窗：评论 / 作者 / 投稿 / 通用 ===== -->
+<div class="sf-modal-mask" id="sfModalMask">
+  <div class="sf-modal" role="dialog" aria-modal="true" aria-labelledby="sfModalTitle">
+    <button class="sf-modal-close" id="sfModalClose" aria-label="关闭弹窗">×</button>
+    <div id="sfModalContent"></div>
+  </div>
+</div>
+
+<div class="sf-toast" id="sfToast" role="status" aria-live="polite"></div>
+<button class="sf-backtop" id="sfBackTop" aria-label="回到顶部">↑</button>
+
+<script src="data:text/javascript;charset=utf-8,%0A(function()%7B%0A%22use%20strict%22%3B%0A%0Avar%20mask%3Ddocument.getElementById(%22sfModalMask%22)%3B%0Avar%20modalContent%3Ddocument.getElementById(%22sfModalContent%22)%3B%0Avar%20modalClose%3Ddocument.getElementById(%22sfModalClose%22)%3B%0Avar%20toast%3Ddocument.getElementById(%22sfToast%22)%3B%0Avar%20toastTimer%3Dnull%3B%0A%0Afunction%20showToast(msg)%7B%0A%20%20toast.textContent%3Dmsg%3B%0A%20%20toast.classList.add(%22show%22)%3B%0A%20%20clearTimeout(toastTimer)%3B%0A%20%20toastTimer%3DsetTimeout(function()%7B%20toast.classList.remove(%22show%22)%3B%20%7D%2C2200)%3B%0A%7D%0A%0Afunction%20openModal(html)%7B%0A%20%20modalContent.innerHTML%3Dhtml%3B%0A%20%20mask.classList.add(%22show%22)%3B%0A%20%20document.body.style.overflow%3D%22hidden%22%3B%0A%7D%0Afunction%20closeModal()%7B%0A%20%20mask.classList.remove(%22show%22)%3B%0A%20%20document.body.style.overflow%3D%22%22%3B%0A%7D%0AmodalClose.addEventListener(%22click%22%2CcloseModal)%3B%0Amask.addEventListener(%22click%22%2Cfunction(e)%7B%20if(e.target%3D%3D%3Dmask)%20closeModal()%3B%20%7D)%3B%0Adocument.addEventListener(%22keydown%22%2Cfunction(e)%7B%20if(e.key%3D%3D%3D%22Escape%22)%20closeModal()%3B%20%7D)%3B%0A%0A%2F%2F%20%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%AF%BC%E8%88%AA%0Avar%20burger%3Ddocument.getElementById(%22sfBurger%22)%3B%0Avar%20nav%3Ddocument.getElementById(%22sfNav%22)%3B%0Aburger.addEventListener(%22click%22%2Cfunction()%7B%0A%20%20var%20open%3Dnav.classList.toggle(%22open%22)%3B%0A%20%20burger.setAttribute(%22aria-expanded%22%2Copen%3F%22true%22%3A%22false%22)%3B%0A%7D)%3B%0Anav.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20if(e.target.tagName%3D%3D%3D%22A%22)%7B%20nav.classList.remove(%22open%22)%3B%20burger.setAttribute(%22aria-expanded%22%2C%22false%22)%3B%20%7D%0A%7D)%3B%0A%0A%2F%2F%20%E6%90%9C%E7%B4%A2%E6%8F%90%E7%A4%BA%0Avar%20searchBox%3Ddocument.getElementById(%22sfSearch%22)%3B%0Avar%20searchInput%3Ddocument.getElementById(%22sfSearchInput%22)%3B%0Avar%20searchTip%3Ddocument.getElementById(%22sfSearchTip%22)%3B%0Avar%20searchBtn%3Ddocument.getElementById(%22sfSearchBtn%22)%3B%0Avar%20suggestions%3D%5B%22%E5%9F%8E%E5%B8%82%E6%8E%A2%E7%B4%A2%22%2C%22%E6%89%8B%E4%BD%9CDIY%22%2C%22%E5%9C%B0%E5%9C%A8%E6%96%87%E5%8C%96%22%2C%22%E5%89%AA%E8%BE%91%E5%B9%95%E5%90%8E%22%2C%22%E6%88%B7%E5%A4%96%E6%B4%BB%E5%8A%A8%22%2C%22%E7%BE%8E%E9%A3%9F%E7%83%B9%E9%A5%AA%22%5D%3B%0Afunction%20renderTip(kw)%7B%0A%20%20var%20q%3D(kw%7C%7C%22%22).trim()%3B%0A%20%20var%20list%3Dq%3Fsuggestions.filter(function(s)%7B%20return%20s.indexOf(q)%3E%3D0%3B%20%7D)%3Asuggestions%3B%0A%20%20if(!list.length)%20list%3Dsuggestions%3B%0A%20%20var%20html%3D%22%3Cp%3E%E4%B8%BA%E4%BD%A0%E6%8E%A8%E8%8D%90%EF%BC%9A%22%2B(q%3F%22%E5%8C%85%E5%90%AB%E3%80%8C%22%2BescapeHtml(q)%2B%22%E3%80%8D%E7%9A%84%E5%86%85%E5%AE%B9%22%3A%22%E7%83%AD%E9%97%A8%E4%B8%BB%E9%A2%98%22)%2B%22%3C%2Fp%3E%22%3B%0A%20%20list.forEach(function(s)%7B%0A%20%20%20%20html%2B%3D%22%3Ca%20href%3D%22%2B%22%23sf-videos%22%2B%22%3E%22%2BescapeHtml(s)%2B%22%3C%2Fa%3E%22%3B%0A%20%20%7D)%3B%0A%20%20searchTip.innerHTML%3Dhtml%3B%0A%20%20searchTip.classList.add(%22show%22)%3B%0A%7D%0Afunction%20escapeHtml(str)%7B%0A%20%20return%20str.replace(%2F%5B%26%3C%3E%22'%5D%2Fg%2Cfunction(c)%7B%0A%20%20%20%20return%20%7B%22%26%22%3A%22%26amp%3B%22%2C%22%3C%22%3A%22%26lt%3B%22%2C%22%3E%22%3A%22%26gt%3B%22%2C%22%5C%22%22%3A%22%26quot%3B%22%2C%22'%22%3A%22%26%2339%3B%22%7D%5Bc%5D%3B%0A%20%20%7D)%3B%0A%7D%0AsearchInput.addEventListener(%22focus%22%2Cfunction()%7B%20renderTip(searchInput.value)%3B%20%7D)%3B%0AsearchInput.addEventListener(%22input%22%2Cfunction()%7B%20renderTip(searchInput.value)%3B%20%7D)%3B%0AsearchInput.addEventListener(%22keydown%22%2Cfunction(e)%7B%0A%20%20if(e.key%3D%3D%3D%22Enter%22)%7B%0A%20%20%20%20e.preventDefault()%3B%0A%20%20%20%20var%20q%3DsearchInput.value.trim()%3B%0A%20%20%20%20if(!q)%7B%20showToast(%22%E8%AF%B7%E8%BE%93%E5%85%A5%E5%85%B3%E9%94%AE%E8%AF%8D%22)%3B%20return%3B%20%7D%0A%20%20%20%20showToast(%22%E6%AD%A3%E5%9C%A8%E7%AD%9B%E9%80%89%E4%B8%8E%E3%80%8C%22%2Bq%2B%22%E3%80%8D%E7%9B%B8%E5%85%B3%E7%9A%84%E5%8E%9F%E5%88%9B%E5%86%85%E5%AE%B9%22)%3B%0A%20%20%20%20searchTip.classList.remove(%22show%22)%3B%0A%20%20%20%20var%20target%3Ddocument.getElementById(%22sf-videos%22)%3B%0A%20%20%20%20if(target)%20target.scrollIntoView(%7Bbehavior%3A%22smooth%22%7D)%3B%0A%20%20%7D%0A%7D)%3B%0AsearchBtn.addEventListener(%22click%22%2Cfunction()%7B%0A%20%20var%20q%3DsearchInput.value.trim()%3B%0A%20%20showToast(q%3F%22%E5%B7%B2%E4%B8%BA%E4%BD%A0%E5%AE%9A%E4%BD%8D%E3%80%8C%22%2Bq%2B%22%E3%80%8D%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%22%3A%22%E8%BE%93%E5%85%A5%E5%85%B3%E9%94%AE%E8%AF%8D%E5%8D%B3%E5%8F%AF%E6%90%9C%E7%B4%A2%22)%3B%0A%7D)%3B%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20if(searchBox%26%26!searchBox.contains(e.target))%20searchTip.classList.remove(%22show%22)%3B%0A%7D)%3B%0A%0A%2F%2F%20%E7%82%B9%E8%B5%9E%20%2F%20%E6%94%B6%E8%97%8F%20%E5%88%87%E6%8D%A2%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20var%20likeBtn%3De.target.closest(%22.sf-like%22)%3B%0A%20%20if(likeBtn)%7B%0A%20%20%20%20var%20liked%3DlikeBtn.classList.toggle(%22liked%22)%3B%0A%20%20%20%20if(likeBtn.closest(%22.sf-comment-foot%22))%7B%0A%20%20%20%20%20%20var%20m%3DlikeBtn.textContent.match(%2F(%5Cd%2B)%2F)%3B%0A%20%20%20%20%20%20var%20n%3Dm%3FparseInt(m%5B1%5D%2C10)%3A0%3B%0A%20%20%20%20%20%20likeBtn.textContent%3D%22%E6%9C%89%E7%94%A8%20%22%2B(liked%3Fn%2B1%3An-1)%3B%0A%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20likeBtn.textContent%3Dliked%3F%22%E5%B7%B2%E7%82%B9%E8%B5%9E%22%3A%22%E7%82%B9%E8%B5%9E%22%3B%0A%20%20%20%20%20%20showToast(liked%3F%22%E7%82%B9%E8%B5%9E%E6%88%90%E5%8A%9F%EF%BC%8C%E6%84%9F%E8%B0%A2%E4%BD%A0%E7%9A%84%E6%94%AF%E6%8C%81%22%3A%22%E5%B7%B2%E5%8F%96%E6%B6%88%E7%82%B9%E8%B5%9E%22)%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20var%20saveBtn%3De.target.closest(%22.sf-save%22)%3B%0A%20%20if(saveBtn)%7B%0A%20%20%20%20var%20saved%3DsaveBtn.classList.toggle(%22saved%22)%3B%0A%20%20%20%20saveBtn.textContent%3Dsaved%3F%22%E5%B7%B2%E6%94%B6%E8%97%8F%22%3A%22%E6%94%B6%E8%97%8F%22%3B%0A%20%20%20%20showToast(saved%3F%22%E5%B7%B2%E6%94%B6%E8%97%8F%E5%88%B0%E4%BD%A0%E7%9A%84%E9%A2%91%E5%8D%95%22%3A%22%E5%B7%B2%E5%8F%96%E6%B6%88%E6%94%B6%E8%97%8F%22)%3B%0A%20%20%7D%0A%7D)%3B%0A%0A%2F%2F%20%E8%AF%84%E8%AE%BA%E5%BC%B9%E7%AA%97%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20var%20btn%3De.target.closest(%22.sf-comment-open%22)%3B%0A%20%20if(!btn)%20return%3B%0A%20%20var%20t%3Dbtn.getAttribute(%22data-target%22)%7C%7C%22%E8%AF%A5%E5%86%85%E5%AE%B9%22%3B%0A%20%20openModal(%0A%20%20%20%20%22%3Ch3%3E%E8%AF%84%E8%AE%BA%EF%BC%9A%22%2BescapeHtml(t)%2B%22%3C%2Fh3%3E%22%2B%0A%20%20%20%20%22%3Cp%3E%E4%B8%8B%E6%96%B9%E4%B8%BA%E8%AF%A5%E5%86%85%E5%AE%B9%E7%9A%84%E7%A4%BE%E5%8C%BA%E8%AE%A8%E8%AE%BA%E7%A4%BA%E6%84%8F%E3%80%82%E8%AF%84%E8%AE%BA%E4%BC%9A%E5%9C%A8%E5%AE%A1%E6%A0%B8%E5%90%8E%E5%85%AC%E5%BC%80%E5%B1%95%E7%A4%BA%E3%80%82%3C%2Fp%3E%22%2B%0A%20%20%20%20%22%3Cul%20style%3D%5C%22font-size%3A13.5px%3Bcolor%3A%2363736b%3Bline-height%3A1.9%3B%22%2B%22%3E%22%2B%0A%20%20%20%20%22%3Cli%3E%E5%86%AC%E8%87%B3%EF%BC%9A%E9%95%9C%E5%A4%B4%E7%9C%9F%E7%9A%84%E5%BE%88%E6%9C%89%E8%80%90%E5%BF%83%EF%BC%8C%E7%9C%8B%E5%AE%8C%E6%83%B3%E5%8E%BB%E8%B5%B0%E4%B8%80%E8%B5%B0%E3%80%82%3C%2Fli%3E%22%2B%0A%20%20%20%20%22%3Cli%3E%E5%8D%97%E9%A3%8E%EF%BC%9A%E5%90%8E%E6%9C%9F%E7%9A%84%E5%AD%97%E5%B9%95%E5%81%8F%E5%A4%A7%E4%B8%80%E7%82%B9%E6%9B%B4%E5%A5%BD%EF%BC%8C%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%9C%8B%E6%9C%89%E7%82%B9%E8%B4%B9%E5%8A%9B%E3%80%82%3C%2Fli%3E%22%2B%0A%20%20%20%20%22%3Cli%3E%E9%99%88%E9%BB%98%EF%BC%9A%E8%BF%99%E6%9D%A1%E7%9A%84%E9%85%8D%E4%B9%90%E9%80%89%E5%BE%97%E5%BE%88%E5%85%8B%E5%88%B6%EF%BC%8C%E5%8A%A0%E5%88%86%E3%80%82%3C%2Fli%3E%22%2B%0A%20%20%20%20%22%3C%2Ful%3E%22%2B%0A%20%20%20%20%22%3Cdiv%20class%3D%5C%22sf-modal-foot%5C%22%3E%3Cbutton%20class%3D%5C%22sf-btn%20sf-btn-ghost%5C%22%20data-close%3D1%3E%E5%85%B3%E9%97%AD%3C%2Fbutton%3E%3C%2Fdiv%3E%22%0A%20%20)%3B%0A%7D)%3B%0A%0A%2F%2F%20%E4%BD%9C%E8%80%85%E5%BC%B9%E7%AA%97%0Avar%20authorData%3D%7B%0A%20%20%22%E6%9E%97%E5%B2%B8%E8%AE%B0%E5%BD%95%22%3A%7Bfield%3A%22%E5%9F%8E%E5%B8%82%E6%8E%A2%E7%B4%A2%20%C2%B7%20%E5%9C%A8%E5%9C%B0%E6%96%87%E5%8C%96%22%2Cworks%3A86%2Cfans%3A%2214.2%E4%B8%87%22%2Cbio%3A%22%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BD%95%E5%9F%8E%E5%B8%82%E7%BB%86%E8%8A%82%EF%BC%8C%E6%8B%8D%E8%BF%87%E5%8D%81%E4%BA%8C%E6%9D%A1%E8%80%81%E8%A1%97%E4%B8%8E%E5%9B%9B%E5%BA%A7%E6%97%A7%E8%BD%A6%E7%AB%99%EF%BC%8C%E5%9D%9A%E6%8C%81%E9%95%BF%E9%95%9C%E5%A4%B4%E4%B8%8E%E7%8E%B0%E5%9C%BA%E5%A3%B0%E3%80%82%22%7D%2C%0A%20%20%22%E4%BD%95%E6%9C%A8%E4%BD%9C%22%3A%7Bfield%3A%22%E6%89%8B%E4%BD%9CDIY%20%C2%B7%20%E4%BC%A0%E7%BB%9F%E5%B7%A5%E8%89%BA%22%2Cworks%3A54%2Cfans%3A%228.7%E4%B8%87%22%2Cbio%3A%22%E6%9C%A8%E5%B7%A5%E6%88%BF%E4%B8%BB%E7%90%86%E4%BA%BA%EF%BC%8C%E8%A7%86%E9%A2%91%E9%87%8C%E4%BF%9D%E7%95%99%E5%A4%B1%E8%B4%A5%E7%9A%84%E6%A6%AB%E5%A4%B4%E4%B8%8E%E7%A3%A8%E7%A0%B4%E7%9A%84%E6%89%8B%E6%8E%8C%EF%BC%8C%E6%AF%8F%E6%9C%9F%E5%85%AC%E5%BC%80%E7%94%A8%E6%96%99%E4%B8%8E%E5%B7%A5%E6%97%B6%E3%80%82%22%7D%2C%0A%20%20%22%E8%AE%B8%E9%87%8E%E5%9C%A8%E5%A4%96%22%3A%7Bfield%3A%22%E6%88%B7%E5%A4%96%E6%B4%BB%E5%8A%A8%20%C2%B7%20%E6%97%85%E8%A1%8C%E8%A7%81%E9%97%BB%22%2Cworks%3A112%2Cfans%3A%2221.6%E4%B8%87%22%2Cbio%3A%22%E5%B8%B8%E5%B9%B4%E5%BE%92%E6%AD%A5%E4%B8%8E%E9%9C%B2%E8%90%A5%EF%BC%8C%E5%9D%9A%E6%8C%81%E6%8A%8A%E8%A3%85%E5%A4%87%E6%B8%85%E5%8D%95%E4%B8%8E%E8%B7%AF%E7%BA%BF%E9%A3%8E%E9%99%A9%E5%86%99%E8%BF%9B%E7%AE%80%E4%BB%8B%EF%BC%8C%E4%BE%9B%E5%90%8E%E6%9D%A5%E8%80%85%E5%8F%82%E8%80%83%E3%80%82%22%7D%2C%0A%20%20%22%E7%BD%97%E5%A3%B0%E8%AE%B0%22%3A%7Bfield%3A%22%E6%95%99%E7%A8%8B%E5%B9%B2%E8%B4%A7%20%C2%B7%20%E9%9F%B3%E9%A2%91%E5%88%9B%E4%BD%9C%22%2Cworks%3A67%2Cfans%3A%2211.3%E4%B8%87%22%2Cbio%3A%22%E5%BD%95%E9%9F%B3%E5%B8%88%E5%87%BA%E8%BA%AB%EF%BC%8C%E6%93%85%E9%95%BF%E6%8A%8A%E5%A3%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%8B%86%E6%88%90%E4%B8%8A%E6%89%8B%E6%AD%A5%E9%AA%A4%EF%BC%8C%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%E9%85%8D%E5%A5%97%E7%B4%A0%E6%9D%90%E5%8C%85%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E3%80%82%22%7D%2C%0A%20%20%22%E8%8B%8F%E6%99%9A%E7%9A%84%E7%81%B6%E5%8F%B0%22%3A%7Bfield%3A%22%E7%BE%8E%E9%A3%9F%E7%83%B9%E9%A5%AA%20%C2%B7%20%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%22%2Cworks%3A98%2Cfans%3A%2218.9%E4%B8%87%22%2Cbio%3A%22%E6%8A%8A%E5%8E%A8%E6%88%BF%E6%8B%8D%E6%88%90%E5%AE%89%E9%9D%99%E7%9A%84%E7%94%9F%E6%B4%BB%E7%8E%B0%E5%9C%BA%EF%BC%8C%E5%B0%91%E7%94%A8%E5%BF%AB%E5%89%AA%EF%BC%8C%E6%84%BF%E6%84%8F%E7%95%99%E5%87%BA%E7%82%96%E7%85%AE%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%22%7D%2C%0A%20%20%22%E5%91%A8%E4%B9%9F%E5%89%AA%22%3A%7Bfield%3A%22%E5%88%9B%E4%BD%9C%E5%B9%95%E5%90%8E%20%C2%B7%20%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%22%2Cworks%3A73%2Cfans%3A%229.8%E4%B8%87%22%2Cbio%3A%22%E4%BB%8E%E5%B9%BF%E5%91%8A%E5%89%AA%E8%BE%91%E8%BD%AC%E5%81%9A%E7%8B%AC%E7%AB%8B%E5%88%9B%E4%BD%9C%EF%BC%8C%E6%AF%8F%E6%9C%9F%E5%85%AC%E5%BC%80%E5%B7%A5%E7%A8%8B%E6%96%87%E4%BB%B6%EF%BC%8C%E7%95%99%E4%B8%8B%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%9A%84%E8%BD%AC%E5%9C%BA%E4%B8%8E%E8%B0%83%E8%89%B2%E6%96%B9%E6%A1%88%E3%80%82%22%7D%0A%7D%3B%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20var%20btn%3De.target.closest(%22.sf-author-open%22)%3B%0A%20%20if(!btn)%20return%3B%0A%20%20var%20name%3Dbtn.getAttribute(%22data-author%22)%3B%0A%20%20var%20d%3DauthorData%5Bname%5D%3B%0A%20%20if(!d)%20return%3B%0A%20%20openModal(%0A%20%20%20%20%22%3Ch3%3E%22%2BescapeHtml(name)%2B%22%3C%2Fh3%3E%22%2B%0A%20%20%20%20%22%3Cp%3E%3Cb%3E%E6%93%85%E9%95%BF%E9%A2%86%E5%9F%9F%EF%BC%9A%3C%2Fb%3E%22%2BescapeHtml(d.field)%2B%22%3C%2Fp%3E%22%2B%0A%20%20%20%20%22%3Cp%3E%22%2BescapeHtml(d.bio)%2B%22%3C%2Fp%3E%22%2B%0A%20%20%20%20%22%3Cp%3E%3Cb%3E%E4%BD%9C%E5%93%81%E6%95%B0%EF%BC%9A%3C%2Fb%3E%22%2Bd.works%2B%22%20%C2%B7%20%3Cb%3E%E7%B2%89%E4%B8%9D%EF%BC%9A%3C%2Fb%3E%22%2BescapeHtml(d.fans)%2B%22%3C%2Fp%3E%22%2B%0A%20%20%20%20%22%3Cdiv%20class%3D%5C%22sf-modal-foot%5C%22%3E%3Cbutton%20class%3D%5C%22sf-btn%20sf-btn-ghost%5C%22%20data-close%3D1%3E%E5%85%B3%E9%97%AD%3C%2Fbutton%3E%3C%2Fdiv%3E%22%0A%20%20)%3B%0A%7D)%3B%0A%0A%2F%2F%20%E6%8A%95%E7%A8%BF%E5%BC%B9%E7%AA%97%0Afunction%20openSubmit()%7B%0A%20%20openModal(%0A%20%20%20%20%22%3Ch3%3E%E6%8A%95%E7%A8%BF%E5%85%A5%E5%8F%A3%3C%2Fh3%3E%22%2B%0A%20%20%20%20%22%3Cp%3E%E8%AF%B7%E5%A1%AB%E5%86%99%E4%BD%9C%E5%93%81%E4%BF%A1%E6%81%AF%EF%BC%8C%E7%BC%96%E8%BE%91%E9%83%A8%E4%BC%9A%E5%9C%A8%E4%BA%94%E4%B8%AA%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%86%85%E5%9B%9E%E5%A4%8D%E3%80%82%3C%2Fp%3E%22%2B%0A%20%20%20%20%22%3Clabel%3E%E4%BD%9C%E5%93%81%E6%A0%87%E9%A2%98%3C%2Flabel%3E%3Cinput%20id%3D%5C%22sfSubTitle%5C%22%20placeholder%3D%5C%22%E5%A6%82%EF%BC%9A%E8%A1%97%E8%A7%92%E7%9A%84%E4%B8%89%E5%8D%81%E5%88%86%E9%92%9F%5C%22%3E%22%2B%0A%20%20%20%20%22%3Clabel%3E%E5%88%9B%E4%BD%9C%E8%80%85%E6%98%B5%E7%A7%B0%3C%2Flabel%3E%3Cinput%20id%3D%5C%22sfSubName%5C%22%20placeholder%3D%5C%22%E5%A1%AB%E5%86%99%E4%BD%A0%E7%9A%84%E6%98%B5%E7%A7%B0%5C%22%3E%22%2B%0A%20%20%20%20%22%3Clabel%3E%E5%86%85%E5%AE%B9%E6%96%B9%E5%90%91%3C%2Flabel%3E%3Cselect%20id%3D%5C%22sfSubType%5C%22%3E%3Coption%3E%E5%9F%8E%E5%B8%82%E6%8E%A2%E7%B4%A2%3C%2Foption%3E%3Coption%3E%E6%89%8B%E4%BD%9CDIY%3C%2Foption%3E%3Coption%3E%E5%9C%A8%E5%9C%B0%E6%96%87%E5%8C%96%3C%2Foption%3E%3Coption%3E%E5%88%9B%E4%BD%9C%E5%B9%95%E5%90%8E%3C%2Foption%3E%3Coption%3E%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F%3C%2Foption%3E%3C%2Fselect%3E%22%2B%0A%20%20%20%20%22%3Clabel%3E%E4%BD%9C%E5%93%81%E7%AE%80%E4%BB%8B%3C%2Flabel%3E%3Ctextarea%20id%3D%5C%22sfSubDesc%5C%22%20rows%3D%5C%223%5C%22%20placeholder%3D%5C%22%E7%AE%80%E8%A6%81%E8%AF%B4%E6%98%8E%E7%94%BB%E9%9D%A2%E3%80%81%E6%97%B6%E9%95%BF%E4%B8%8E%E6%8B%8D%E6%91%84%E8%83%8C%E6%99%AF%5C%22%3E%3C%2Ftextarea%3E%22%2B%0A%20%20%20%20%22%3Cdiv%20class%3D%5C%22sf-modal-foot%5C%22%3E%3Cbutton%20class%3D%5C%22sf-btn%20sf-btn-ghost%5C%22%20data-close%3D1%3E%E5%8F%96%E6%B6%88%3C%2Fbutton%3E%3Cbutton%20class%3D%5C%22sf-btn%20sf-btn-solid%5C%22%20id%3D%5C%22sfSubSend%5C%22%3E%E6%8F%90%E4%BA%A4%3C%2Fbutton%3E%3C%2Fdiv%3E%22%0A%20%20)%3B%0A%7D%0Avar%20submitBtn%3Ddocument.getElementById(%22sfSubmitBtn%22)%3B%0Avar%20contactSubmit%3Ddocument.getElementById(%22sfContactSubmit%22)%3B%0Aif(submitBtn)%20submitBtn.addEventListener(%22click%22%2CopenSubmit)%3B%0Aif(contactSubmit)%20contactSubmit.addEventListener(%22click%22%2CopenSubmit)%3B%0A%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20if(e.target%26%26e.target.id%3D%3D%3D%22sfSubSend%22)%7B%0A%20%20%20%20var%20t%3Ddocument.getElementById(%22sfSubTitle%22)%3B%0A%20%20%20%20if(!t%7C%7C!t.value.trim())%7B%20showToast(%22%E8%AF%B7%E5%85%88%E5%A1%AB%E5%86%99%E4%BD%9C%E5%93%81%E6%A0%87%E9%A2%98%22)%3B%20return%3B%20%7D%0A%20%20%20%20closeModal()%3B%0A%20%20%20%20showToast(%22%E6%8A%95%E7%A8%BF%E5%B7%B2%E6%8F%90%E4%BA%A4%EF%BC%8C%E7%AD%96%E5%88%92%E7%BC%96%E8%BE%91%E4%BC%9A%E5%B0%BD%E5%BF%AB%E5%9B%9E%E5%A4%8D%22)%3B%0A%20%20%7D%0A%20%20if(e.target.closest(%22%5Bdata-close%5D%22))%20closeModal()%3B%0A%7D)%3B%0A%0A%2F%2F%20%E5%A4%8D%E5%88%B6%E9%93%BE%E6%8E%A5%0Afunction%20copyLink()%7B%0A%20%20var%20text%3D%22%E5%9B%9B%E5%8F%B6%E8%8D%89%E8%A7%86%E9%A2%91%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99%20%C2%B7%20hxc%E7%9B%B4%E6%8E%A5%E8%BF%9B%E5%85%A5%E5%9B%9B%E5%8F%B6%E8%8D%89%22%3B%0A%20%20if(navigator.clipboard%26%26navigator.clipboard.writeText)%7B%0A%20%20%20%20navigator.clipboard.writeText(text).then(function()%7B%20showToast(%22%E9%93%BE%E6%8E%A5%E5%B7%B2%E5%A4%8D%E5%88%B6%EF%BC%8C%E5%8F%AF%E5%88%86%E4%BA%AB%E7%BB%99%E6%9C%8B%E5%8F%8B%22)%3B%20%7D).catch(function()%7B%20showToast(%22%E5%A4%8D%E5%88%B6%E5%A4%B1%E8%B4%A5%EF%BC%8C%E8%AF%B7%E6%89%8B%E5%8A%A8%E5%A4%8D%E5%88%B6%22)%3B%20%7D)%3B%0A%20%20%7Delse%7B%0A%20%20%20%20showToast(%22%E5%A4%8D%E5%88%B6%E5%A4%B1%E8%B4%A5%EF%BC%8C%E8%AF%B7%E6%89%8B%E5%8A%A8%E5%A4%8D%E5%88%B6%22)%3B%0A%20%20%7D%0A%7D%0Adocument.addEventListener(%22click%22%2Cfunction(e)%7B%0A%20%20if(e.target.closest(%22.sf-copy%22))%20copyLink()%3B%0A%7D)%3B%0A%0A%2F%2F%20%E5%9B%9E%E5%88%B0%E9%A1%B6%E9%83%A8%0Avar%20backTop%3Ddocument.getElementById(%22sfBackTop%22)%3B%0Awindow.addEventListener(%22scroll%22%2Cfunction()%7B%0A%20%20if(window.scrollY%3E520)%20backTop.classList.add(%22show%22)%3B%0A%20%20else%20backTop.classList.remove(%22show%22)%3B%0A%7D%2C%7Bpassive%3Atrue%7D)%3B%0AbackTop.addEventListener(%22click%22%2Cfunction()%7B%0A%20%20window.scrollTo(%7Btop%3A0%2Cbehavior%3A%22smooth%22%7D)%3B%0A%7D)%3B%0A%0A%7D)()%3B%0A"></script>
+</body>
+  </html>
